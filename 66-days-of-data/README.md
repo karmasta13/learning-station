@@ -3,7 +3,7 @@
 <br/>
 <details> 
 	<br/>
-    <summary> &nbsp; 📝 &nbsp; Day 1 - Revision of Statistics and Basic SQL </summary>
+    <summary> &nbsp; 📖 &nbsp; Day 1 - The Importance of Data Governance in Organizations </summary>
 
  🗓️ Date: 2023-02-15 <br>
  🔖 Resource: [Learning Data Governance](https://www.linkedin.com/learning-login/share?account=57118729&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Flearning-data-governance-14224082%3Ftrk%3Dshare_ent_url%26shareId%3Dcohrv0OvTo6yI5CniLW7DQ%253D%253D)
