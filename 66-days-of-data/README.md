@@ -44,7 +44,6 @@ Furthermore, the course covered two-population comparisons, where I learned how 
 </details>
 
 
-
 <details> 
 <br/>
 <summary> &nbsp; 📖 &nbsp; Day 3 - Exploring Analytics Engineering, ETL vs ELT, and dbt for Data Transformation </summary>
@@ -71,5 +70,59 @@ Next, I will dive deeper into dbt and explore this powerful too.
 
 </details>
 
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 4 - Diving into dbt fundamentals: A technical overview </summary>
+
+>  🗓️ &nbsp; Date: 2023-02-23  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Fundamentals of Dbt](https://courses.getdbt.com/courses/fundamentals)	
+
+<p align="justify">
+Today, I learned about data orchestration, fact models, dimension models, and DAG. I also explored the history of data modeling, including the Star schema, Kimball, and Data Vault. I learned that denormalized modeling, agile analytics, and ad hoc analytics are the latest trends in data modeling. I also learned why marts are called marts, and the differences between materialized tables and views.
+</p>
+  
+<p align="justify">
+In addition, I learned that models are .sql files that live in the models folder and that modularity is the degree to which a system's components may be separated and recombined. I also explored the concept of Sources, Staging, Intermediate, Fact, and Dimension models. I learned about upstream and downstream dependencies and the importance of data freshness in dbt.
+</p>
+
+<p align="justify">
+I learned about the importance of modularity in dbt and how it allows for easy separation and recombination of system components. I also learned about the ref macro, which allows for easy reference to other models in the project. Testing is an essential aspect of data transformation, and dbt has features that allow for testing at multiple levels. There are two types of tests in dbt: singular tests and generic tests. Singular tests are specific queries that run on an entire model, while generic tests are written in YAML and run on specific columns in a model.
+</p>
+
+<details>
+  <summary>Some of the Terminology</summary>
+  
+| Term | Description |
+| --- | --- |
+| Analytics Engineering | The process of creating and managing a data pipeline that transforms raw data into actionable insights. |
+| ETL | Extract, Transform, Load - a data integration process that extracts data from source systems, transforms it into a format suitable for analysis, and loads it into a data warehouse. |
+| ELT | Extract, Load, Transform - a data integration process that extracts data from source systems and loads it into a data warehouse, where it is transformed for analysis. |
+| dbt | Data Build Tool - a tool for managing data transformations and orchestrating the data pipeline. |
+| Fact Model | A data model that represents a fact or event, such as a sale or a customer interaction. |
+| Dimension Model | A data model that represents a person, place, or thing, such as a customer or a product. |
+| DAG | Directed Acyclic Graph - a visual representation of the dependencies between data pipeline tasks. |
+| Data Vault | A data modeling technique that focuses on auditability, flexibility, and scalability. |
+| Materialized Table | A table that is pre-calculated and stored in a database, improving query performance. |
+| View | A virtual table that is a result of a query, allowing users to see a specific subset of data without altering the underlying data. |
+| Modularity | The degree to which a system's components may be separated and recombined, often with the benefit of flexibility and variety in use. |
+| ref Macro | A dbt macro that creates a reference to a model, allowing users to reuse the code and maintain consistency. |
+| Source (src) | Raw table data that have been built in the warehouse through a loading process. |
+| Staging (stg) | Models that are built directly on top of sources, used for light transformations that shape the data into what you want it to be. |
+| Intermediate (int) | Models that exist between final fact and dimension tables, built on staging models rather than directly on sources to leverage the data cleaning that was done in staging. |
+| Upstream | Refers to the models that are required to build a specific model. |
+| Downstream | Refers to the models that are built on top of a specific model. |
+| Freshness | The time since the last time data was refreshed or updated. |
+| Singular Tests | Specific queries that are run against a model. |
+| Generic Tests | Tests written in YAML that return the number of records that do not meet your assertions. |
+| dbt test | A command that runs tests against a model. |
+| dbt build | A command that builds the models and prepares them for the data pipeline. |
+| Documentation | Information about a model or data pipeline, often in the form of comments or doc blocks. |
+| Doc Block | A comment block in dbt that allows users to provide additional context and information about a model or data pipeline. |
+
+  </details>
+
+---
+
+</details>
 
 
