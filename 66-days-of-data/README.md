@@ -1,4 +1,4 @@
-# Journey of 66 Days of Data Science
+# Journey of 66 Days of Data
 
 <br/>
 <details> 
