@@ -40,9 +40,10 @@ In this advanced statistics course, I gained a deeper understanding of various s
 Furthermore, the course covered two-population comparisons, where I learned how to compare means and variances of two populations using different statistical tests, such as t-tests and F-tests. Additionally, the course covered advanced topics such as small sample sizes, t-distribution, degrees of freedom, and statistical power.
 </p>
 
+---
 </details>
 
----
+
 
 <details> 
 <br/>
@@ -63,8 +64,10 @@ dbt (data build tool) is a popular open-source tool that is used to manage data 
 <p align="justify">
 Next, I will dive deeper into dbt and explore this powerful too. 
 </p>
+  
+---
 
 </details>
 
----
+
 
