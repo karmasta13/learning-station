@@ -2,14 +2,11 @@
 
 <br/>
 <details> 
+
 <br/>
 <summary> &nbsp; 📖 &nbsp; Day 1 - The Importance of Data Governance in Organizations </summary>
 
-
-
 > 🗓️ &nbsp;  Date: 2023-02-20  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Learning Data Governance](https://www.linkedin.com/learning-login/share?account=57118729&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Flearning-data-governance-14224082%3Ftrk%3Dshare_ent_url%26shareId%3Dcohrv0OvTo6yI5CniLW7DQ%253D%253D)
-
-
 
 <p align="justify">
 In this course on data governance, I learned about the importance of managing data effectively within organizations.
@@ -25,6 +22,7 @@ Overall, this course on data governance has helped me to appreciate the importan
 ___
 
 </details>
+
 
 <details> 
 <br/>
@@ -123,6 +121,103 @@ I learned about the importance of modularity in dbt and how it allows for easy s
 
 ---
 
+</details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 5 - Measures of Spread in Python </summary>
+
+>  🗓️ &nbsp; Date: 2023-02-24  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Introduction to Statistics in Python](https://app.datacamp.com/learn/courses/introduction-to-statistics-in-python)	
+
+<p align="justify">
+Today I learned about measures of spread such as variance, standard deviation, and mean absolute deviation in Python. These measures help to understand how much the data is spread out from the mean or central tendency.
+</p>
+
+<details> <br>
+<summary> &nbsp; Variance and Standard Deviation</summary>
+Variance is the average of the squared differences from the mean, while standard deviation is the square root of variance.
+
+<pre><code>
+import numpy as np
+
+data = [2, 4, 6, 8, 10]
+
+var = np.var(data)
+std = np.std(data)
+
+print("Variance:", var)
+print("Standard Deviation:", std)
+
+## output 
+Variance: 8.0
+Standard Deviation: 2.8284271247461903
+
+</code></pre>
+
+</details>
+
+<details> <br>
+
+ <summary> &nbsp; Mean Absolute Deviation </summary>
+Mean absolute deviation (MAD) is the average of the absolute differences from the mean.
+
+<pre><code>
+import numpy as np
+
+data = [2, 4, 6, 8, 10]
+
+mean = np.mean(data)
+mad = np.mean(np.abs(data - mean))
+
+print("Mean Absolute Deviation:", mad)
+
+## output 
+Mean Absolute Deviation: 2.4
+
+</code></pre>
+
+</details>
+
+<details>
+
+<summary> &nbsp; Difference between SD and MSD </summary> <br>
+
+The main difference between standard deviation and mean absolute deviation is that the former gives more weight to extreme values in the dataset, whereas the latter treats all deviations equally. Therefore, standard deviation is more sensitive to outliers than mean absolute deviation.
+
+</details>
+
+<details> <br>
+
+<summary> &nbsp; Interquartile Range and Outliers </summary>
+Interquartile range (IQR) is the range between the first and third quartiles of the dataset, and it can be used to identify outliers. Any value outside the range of 1.5 times the IQR below the first quartile or above the third quartile is considered an outlier.
+
+<pre><code>
+import numpy as np
+import scipy.stats as stats
+
+data = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40]
+
+q1, q3 = np.percentile(data, [25, 75])
+iqr = q3 - q1
+
+lower_bound = q1 - (1.5 * iqr)
+upper_bound = q3 + (1.5 * iqr)
+
+outliers = [x for x in data if x < lower_bound or x > upper_bound]
+
+print("Interquartile Range:", iqr)
+print("Outliers:", outliers)
+
+
+## output 
+Interquartile Range: 18.0
+Outliers: [2, 40]
+
+</code></pre>
+</details>
+
+---
 </details>
 
 
