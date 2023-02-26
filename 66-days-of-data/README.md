@@ -221,3 +221,55 @@ Outliers: [2, 40]
 </details>
 
 
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 6 - Discrete probability and sampling  </summary>
+
+>  🗓️ &nbsp; Date: 2023-02-22  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: Random Numbers and Probability](https://campus.datacamp.com/courses/introduction-to-statistics-in-python/random-numbers-and-probability-2?ex=1) , [Youtube playlist: Discrete Probability](https://www.youtube.com/watch?v=oHcrna8Fk18&list=PLvxOuBpazmsNIHP5cz37oOPZx0JKyNszN)
+
+<p align="justify">
+Today, I learned about probability distributions in Python, specifically discrete probability distributions such as the binomial, Poisson, and geometric distributions. I also learned about sampling using the sample() method in Python as sampling is the process of selecting a subset of data from a larger dataset, usually for the purpose of making inferences about the larger population.
+
+</p>
+  
+<p align="justify">
+In Python, we can use the NumPy library to generate random numbers from different probability distributions. For example, we can use the binomial distribution to simulate flipping a coin a certain number of times and counting the number of heads. The binomial distribution takes two parameters: the number of trials (n) and the probability of success (p). The following code generates 100 random numbers from a binomial distribution with n=10 and p=0.5:
+</p>
+
+
+<pre><code>
+import numpy as np
+binomial_dist = np.random.binomial(n=10, p=0.5, size=100)
+</code></pre>
+
+<p align="justify">
+Similarly, we can use the Poisson distribution to model the number of events occurring in a fixed interval of time or space, given the average rate of occurrence. The Poisson distribution takes one parameter: the average rate of occurrence (λ). The following code generates 100 random numbers from a Poisson distribution with λ=5:
+</p>
+
+<pre><code>
+import numpy as np
+poisson_dist = np.random.poisson(lam=5, size=100)
+</code></pre>
+
+<p align="justify">
+Lastly, the geometric distribution models the number of trials needed to achieve the first success in a series of independent trials, each with the same probability of success. The geometric distribution takes one parameter: the probability of success (p). The following code generates 100 random numbers from a geometric distribution with p=0.3:
+</p>
+
+<pre><code>
+import numpy as np
+geometric_dist = np.random.geometric(p=0.3, size=100)
+</code></pre>
+  
+<p align="justify">
+In addition to generating random numbers from probability distributions, we can use the sample() method in Python to randomly sample a subset of data from a larger dataset. The sample() method takes one parameter: the sample size. The following code randomly samples 10 values from a list of numbers:
+</p>
+
+<pre><code>
+import numpy as np
+data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+sample = np.random.choice(data, size=10, replace=False)
+</code></pre>
+    
+---
+
+</details>
