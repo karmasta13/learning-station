@@ -1,3 +1,20 @@
+<!--- <details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day N - Something</summary>
+
+>  🗓️ &nbsp; Date: 2023-02-N  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [ResourceNAME](Link) 
+
+<p align="justify">
+</p>
+  
+<pre><code>
+</code></pre>
+
+---
+
+</details> ---> 
+
+
 # Journey of 66 Days of Data
 
 <br/>
@@ -273,3 +290,78 @@ sample = np.random.choice(data, size=10, replace=False)
 ---
 
 </details>
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 7 - Continuous Distribution and Binomial Distribution in Python</summary>
+
+>  🗓️ &nbsp; Date: 2023-02-27  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: Random Numbers and Probability](https://campus.datacamp.com/courses/introduction-to-statistics-in-python/random-numbers-and-probability-2?ex=1)
+
+<p align="justify">
+Today, I continued my exploration of probability theory and practiced using the Uniform distribution and Binomial distribution in Python.
+</p>
+
+### Continuous Distribution
+<p align="justify">
+A continuous distribution is used to describe the probability of a continuous random variable taking on values within a specific range. One common example of a continuous distribution is the Uniform distribution, which describes a scenario where all values in a range are equally likely to occur. In Python, I used the scipy.stats module to work with continuous distributions, specifically the uniform function.
+Here's an example of using uniform.cdf to calculate the cumulative distribution function of the Uniform distribution:
+</p>
+  
+<pre><code>
+from scipy.stats import uniform
+
+# Define the range of the Uniform distribution (lower bound and upper bound)
+lower = 0
+upper = 10
+
+# Calculate the cumulative distribution function (CDF) of the Uniform distribution at x = 5 
+uniform.cdf(5, lower, upper)
+
+##output 
+0.5
+
+</code></pre>
+
+<p align="justify">
+I also used the uniform.rvs function to generate random numbers from the Uniform distribution:
+</p>
+
+<pre><code>
+from scipy.stats import uniform
+
+# Define the range of the Uniform distribution (lower bound and upper bound)
+lower = 0
+upper = 10
+
+# Generate 10 random numbers from the Uniform distribution
+uniform.rvs(upper, lower, size=10)
+</code></pre>
+---
+
+### Binomial Distribution
+
+<p align="justify">
+The Binomial distribution is used to describe the probability of a certain number of successes in a fixed number of independent trials. In Python, I used the scipy.stats.binom module to work with the Binomial distribution.
+
+Here's an example of using binom.pmf to calculate the probability mass function of the Binomial distribution:
+</p>
+  
+<pre><code>
+from scipy.stats import binom
+
+# Calculate the probability of getting exactly 2 heads in 5 coin flips
+n = 5
+p = 0.5
+k = 2
+
+binom.pmf(k, n, p)
+
+</code></pre>
+
+<p align="justify">
+In this example, I calculated the probability of getting exactly 2 heads in 5 coin flips, where the probability of getting heads on any given flip is 0.5. The k parameter specifies the number of successes, the n parameter specifies the total number of trials, and the p parameter specifies the probability of success for each trial.</p>
+
+<p align="justify">
+Overall, it was an interesting day exploring continuous and Binomial distributions in Python. I look forward to continuing my learning and exploring other types of probability distributions.</p>
+
+</detail>
