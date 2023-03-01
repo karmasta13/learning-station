@@ -482,7 +482,7 @@ lambda_ = 1/4
 expon.cdf(3, scale=1/lambda_)
 
 # Output: 0.3296799539643607
-
+</code></pre>
 ---
 
 ### t-Distribution (Student's Distribution)
