@@ -456,4 +456,71 @@ plt.show()
   
   ---
 
-</detail>  
+</details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 9 - (Continued) Exponential Distribution, t-Distribution, Log Normal Distribution </summary>
+
+>  🗓️ &nbsp; Date: 2023-01-01  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: More Distributions and the Central Limit Theorem](https://campus.datacamp.com/courses/introduction-to-statistics-in-python/more-distributions-and-the-central-limit-theorem-3?ex=1)
+
+<p align="justify">
+Today, I continued my exploration of probability theory and practiced using the Exponential distribution, t-Distribution, Log Normal distribution.
+</p>
+
+### Exponential Distribution:
+  
+<p align="justify">
+The Exponential distribution is a continuous probability distribution that describes the time between events in a Poisson point process, where events occur independently and at a constant rate. The Exponential distribution has a parameter lambda (λ) which represents the rate of events. Here's an example of using expon.cdf to calculate the cumulative distribution function of the Exponential distribution:
+  
+<pre><code>
+from scipy.stats import expon
+
+# Calculate the probability of waiting less than 3 minutes between two events that occur on average every 4 minutes
+lambda_ = 1/4
+expon.cdf(3, scale=1/lambda_)
+
+# Output: 0.3296799539643607
+
+---
+
+### t-Distribution (Student's Distribution)
+
+<p align="justify">
+The t-Distribution is a continuous probability distribution that is used when the sample size is small and/or when the population variance is unknown. In Python, I used the scipy.stats.t module to work with the t-Distribution. The t-Distribution has a parameter called degrees of freedom (df) which determines the shape of the distribution. When the degrees of freedom are low, the t-Distribution has fatter tails and a lower peak than the normal distribution. Here's an example of using t.cdf to calculate the cumulative distribution function of the t-Distribution:
+</p>
+  
+<pre><code>
+from scipy.stats import t
+
+# Calculate the cumulative distribution function (CDF) of the t-distribution at x = 2
+t.cdf(2, df=5)
+
+# Output: 0.9342621026418957
+
+</code></pre>
+
+---
+
+### Log Normal Distribution
+
+<p align="justify">
+The log normal distribution is a continuous probability distribution that is used when the underlying data is positively skewed and can be transformed to a normal distribution by taking the logarithm of the data. In Python, I used the scipy.stats.lognorm module to work with the log normal distribution.
+</p>
+  
+<pre><code>
+
+from scipy.stats import lognorm
+
+# Generate 10 random numbers from the log normal distribution with shape parameter = 0.25 and scale parameter = 1
+lognorm.rvs(s=0.25, scale=1, size=10)
+
+# Output: array([1.22673498, 0.60983203, 0.62700296, 1.10447058, 1.56578228,
+#                0.87423138, 0.85463339, 1.09205123, 1.20236384, 1.12615535])
+
+</code></pre>
+  
+  ---
+
+</details>
