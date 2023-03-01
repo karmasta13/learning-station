@@ -364,4 +364,96 @@ In this example, I calculated the probability of getting exactly 2 heads in 5 co
 <p align="justify">
 Overall, it was an interesting day exploring continuous and Binomial distributions in Python. I look forward to continuing my learning and exploring other types of probability distributions.</p>
 
-</detail>
+  ---
+</details>
+  
+  
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 8 - (Continued) Probability Distributions, Normal Distribution, Poisson Distribution, and the Central Limit Theorem</summary>
+
+>  🗓️ &nbsp; Date: 2023-02-28  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: More Distributions and the Central Limit Theorem](https://campus.datacamp.com/courses/introduction-to-statistics-in-python/more-distributions-and-the-central-limit-theorem-3?ex=1)
+
+<p align="justify">
+Today, I continued my exploration of probability theory and learned about the normal distribution in more depth, as well as the Poisson distribution and the central limit theorem.
+</p>
+
+### Normal Distribution:
+  
+<p align="justify">
+I learned about the normal distribution, which is a continuous probability distribution that is commonly used to model real-world phenomena. Here's an example of using norm.cdf to calculate the cumulative distribution function of the Normal distribution:
+  
+<pre><code>
+from scipy.stats import norm
+
+# Calculate the probability that a random variable from a normal distribution with mean 0 and standard deviation 1 is less than 1
+norm.cdf(1, 0, 1)
+
+</code></pre>
+
+<p align="justify">
+I also used the norm.rvs function to generate random numbers from the Normal distribution:
+</p>
+  
+<pre><code>
+from scipy.stats import norm
+
+# Generate 10 random numbers from a normal distribution with mean 0 and standard deviation 1
+norm.rvs(0, 1, size=10)
+
+</code></pre>
+---
+
+### Poisson Distribution
+
+<p align="justify">
+The Poisson distribution is a discrete probability distribution that is used to model the number of times an event occurs in a fixed time period. In Python, I used the scipy.stats.poisson module to work with the Poisson distribution. Here's an example of using poisson.pmf to calculate the probability mass function of the Poisson distribution:
+</p>
+  
+<pre><code>
+from scipy.stats import poisson
+
+# Calculate the probability of seeing 3 cars passing by in 1 minute on average
+mu = 2
+poisson.pmf(3, mu)
+
+</code></pre>
+
+---
+
+### Central Limit Theorem
+
+<p align="justify">
+The Central Limit Theorem states that the sum of a large number of independent and identically distributed random variables will be approximately normally distributed, regardless of the underlying distribution of the individual variables. In Python, I used numpy to simulate the Central Limit Theorem. Here's an example of generating 1000 samples of 100 uniformly distributed random variables and calculating the mean of each sample:
+</p>
+  
+<pre><code>
+import numpy as np
+from scipy.stats import norm
+
+# Generate 1000 samples of 100 uniformly distributed random variables
+samples = np.random.uniform(0, 1, (1000, 100))
+
+# Calculate the mean of each sample
+sample_means = np.mean(samples, axis=1)
+
+# Plot the distribution of sample means
+import matplotlib.pyplot as plt
+
+plt.hist(sample_means, bins=30, density=True)
+
+# Calculate the parameters of the normal distribution that approximates the sample means
+mean = np.mean(sample_means)
+std = np.std(sample_means)
+
+# Plot the normal distribution that approximates the sample means
+x = np.linspace(mean - 3*std, mean + 3*std, 100)
+plt.plot(x, norm.pdf(x, mean, std), 'r')
+
+plt.show()
+
+</code></pre>
+  
+  ---
+
+</detail>  
