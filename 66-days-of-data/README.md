@@ -463,7 +463,7 @@ plt.show()
 <br/>
 <summary> &nbsp; 📖 &nbsp; Day 9 - (Continued) Exponential Distribution, t-Distribution, Log Normal Distribution </summary>
 
->  🗓️ &nbsp; Date: 2023-01-01  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: More Distributions and the Central Limit Theorem](https://campus.datacamp.com/courses/introduction-to-statistics-in-python/more-distributions-and-the-central-limit-theorem-3?ex=1)
+>  🗓️ &nbsp; Date: 2023-03-01  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: More Distributions and the Central Limit Theorem](https://campus.datacamp.com/courses/introduction-to-statistics-in-python/more-distributions-and-the-central-limit-theorem-3?ex=1)
 
 <p align="justify">
 Today, I continued my exploration of probability theory and practiced using the Exponential distribution, t-Distribution, Log Normal distribution.
@@ -524,3 +524,105 @@ lognorm.rvs(s=0.25, scale=1, size=10)
   ---
 
 </details>
+  
+  
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 10 - Exploring Correlation and its Caveats: A Guide to Transformation and Types of Correlation </summary>
+
+>  🗓️ &nbsp; Date: 2023-03-02  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: Correlation and Experimental Design
+](https://campus.datacamp.com/courses/introduction-to-statistics-in-python/correlation-and-experimental-design-4?ex=1)
+
+<p align="justify">
+Today, I learned about correlation, its statistical formulation, and correlation caveats. Here's a breakdown of what I covered today:</p>
+
+## Correlation:
+  
+<p align="justify">
+Correlation is a measure of the strength and direction of the relationship between two variables. It is commonly used in statistics to investigate the association between variables. </p>
+  
+### Pearson Correlation:
+  
+<p align="justify">
+The Pearson Correlation coefficient, also known as Pearson's r, is a measure of the linear relationship between two continuous variables. It ranges from -1 to +1, where -1 indicates a perfect negative correlation, 0 indicates no correlation, and +1 indicates a perfect positive correlation. The formula for calculating Pearson's r is: </p>
+
+<code> r = (nΣXY - ΣXΣY) / sqrt((nΣX^2 - (ΣX)^2) * (nΣY^2 - (ΣY)^2)) </code>
+<br>
+  
+In Python, we can use the pearsonr function from the scipy.stats module to calculate the Pearson Correlation coefficient and its p-value.
+ <pre><code>
+from scipy.stats import pearsonr
+
+# Calculate Pearson's r and p-value between two arrays x and y
+x = [1, 2, 3, 4, 5]
+y = [5, 4, 3, 2, 1]
+corr, p_val = pearsonr(x, y)
+
+print("Pearson's r =", corr)
+print("p-value =", p_val)
+
+## Pearson's r = -1.0
+## p-value = 0.0
+</code></pre> 
+
+### Other Types Correlation:
+  
+<p align="justify">
+Apart from Pearson's correlation, there are other types of correlation measures, such as Spearman's rank correlation coefficient and Kendall's tau correlation coefficient. These measures are used when the relationship between the two variables is not necessarily linear or when the data is ordinal.
+</p>
+
+---
+
+## Correlation Caveats:
+  
+<p align="justify">
+While correlation is a useful tool for investigating the relationship between variables, there are some caveats to keep in mind. </p>
+  
+### Importance of Transformation:
+  
+<p align="justify">
+Correlation measures the linear relationship between two variables, which means that if the relationship is not linear, correlation may not accurately reflect the true association. In such cases, transforming the data using functions such as log, square root, reciprocal, or a combination of these may help to linearize the relationship and improve the accuracy of the correlation. </p>
+
+<pre><code>
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate two arrays with a non-linear relationship
+x = np.arange(1, 11)
+y = x ** 2 + 5 * x + 10
+
+# Plot the data
+plt.scatter(x, y)
+plt.show()
+</code></pre>   
+
+<br>
+
+<pre><code>
+# Transform the data using log function
+x_log = np.log(x)
+y_log = np.log(y)
+
+# Plot the transformed data
+plt.scatter(x_log, y_log)
+plt.show()
+</code></pre>
+  
+ 
+
+
+### Correlation does not imply causation:
+  
+<p align="justify">
+It is important to note that correlation does not imply causation. Just because two variables are correlated does not necessarily mean that one causes the other.
+</p>
+  
+<p align="justify">
+For example, a study might find a positive correlation between ice cream sales and the number of drownings at the beach. However, this does not mean that eating ice cream causes people to drown or vice versa. Instead, the real explanation for this correlation is that both variables are influenced by a third variable, such as hot weather.
+</p>  
+  
+---
+
+</details>
+  
