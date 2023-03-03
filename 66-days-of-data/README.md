@@ -625,4 +625,46 @@ For example, a study might find a positive correlation between ice cream sales a
 ---
 
 </details>
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 11 - Exploring Experimental Design and Observational Studies </summary>
+
+>  🗓️ &nbsp; Date: 2023-03-03  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: Correlation and Experimental Design
+](https://campus.datacamp.com/courses/introduction-to-statistics-in-python/correlation-and-experimental-design-4?ex=1)
+
+<p align="justify">
+Today, I continued my exploration of statistics and learned about the design of experiments. In particular, I learned about the various methods used in experimental and observational studies to reduce bias and increase the reliability of the results.</p>
+  
+### Treatment and Response in Experimental Design
+<p align="justify">
+reatment refers to any intervention or manipulation applied to a group or individual in an experiment. It is the variable that is being studied and can be either a controlled variable or an independent variable. For example, in a medical trial, the treatment may be a new drug that is being tested for its effectiveness in treating a certain condition. </p>  
+
+<p align="justify">
+Response, on the other hand, refers to the measured outcome or effect of the treatment. It is the variable that is being observed and analyzed to determine if the treatment had any effect. In the medical trial example, the response could be the improvement in the patient's condition after taking the new drug. </p>   
+
+### A/B Testing:
+<p align="justify">
+A/B testing is a method used in experimental studies to compare two different treatments or versions of a product to see which one performs better. In A/B testing, a sample of individuals is randomly divided into two groups, one group receives the first treatment (A) while the other receives the second treatment (B). The outcomes of each group are then compared to determine which treatment is more effective. </p>
+ 
+### Gold Standard of Experimentation:
+<p align="justify">
+The randomized control trial (RCT) is considered the gold standard in experimentation. In an RCT, individuals are randomly assigned to either the treatment group or the control group. The control group is used as a baseline to compare the results of the treatment group. Placebos and double-blind trials are used to further reduce bias and increase the reliability of the results. </p>
+  
+### Observational Study:
+<p align="justify">
+Observational studies are used in situations where it is not feasible or ethical to conduct an experimental study. In observational studies, researchers observe and record the natural behavior of individuals or groups. However, it is important to note that observational studies are more susceptible to bias than experimental studies, as the researchers do not have control over the treatment or exposure. </p>  
+  
+### Confounding Variables:
+<p align="justify">
+Confounding variables are variables that are related to both the independent and dependent variables, making it difficult to determine the true relationship between them. It is important to control for confounding variables in experimental and observational studies to increase the reliability of the results. </p>  
+  
+### Longitudinal vs Cross-Sectional Studies:
+<p align="justify">
+In a longitudinal study, individuals are observed and measured over a long period of time to determine how they change over time. In contrast, a cross-sectional study measures a group of individuals at a single point in time. Both types of studies have their advantages and disadvantages, and the choice between them depends on the research question and available resources. </p>    
+  
+<p align="justify">
+Overall, I found today's lesson on the design of experiments to be very informative and relevant to my work as a data scientist. It is important to consider the various methods used in experimental and observational studies to ensure that the results are reliable and free from bias. </p>     
+  
+  
   
