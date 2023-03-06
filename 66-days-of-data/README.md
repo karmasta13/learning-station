@@ -665,6 +665,81 @@ In a longitudinal study, individuals are observed and measured over a long perio
   
 <p align="justify">
 Overall, I found today's lesson on the design of experiments to be very informative and relevant to my work as a data scientist. It is important to consider the various methods used in experimental and observational studies to ensure that the results are reliable and free from bias. </p>     
+</details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 12 - Exploring Regression Analysis </summary>
+
+>  🗓️ &nbsp; Date: 2023-03-05  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: Simple Linear Regression Modeling
+](https://campus.datacamp.com/courses/introduction-to-regression-with-statsmodels-in-python/simple-linear-regression-modeling?ex=1)
+
+<p align="justify">
+I continued my exploration of statistics. I learned about regression analysis, specifically linear and logistic regression. I also learned about adding a linear trend line, the intercept, slope, and equation, as well as running a model in Python using the statsmodels library. </p>
+<p align="justify">
+Regression analysis is a statistical technique used to model the relationship between a dependent variable and one or more independent variables.
+</p>
+
+---
+
+### Linear and Logistic Regression:
   
+<p align="justify">
+I learned about two types of regression: linear and logistic regression. Linear regression is used to model the relationship between two continuous variables, while logistic regression is used to model the relationship between a binary dependent variable and one or more independent variables.
+ </p>
+ 
+---  
+
+### Adding a Linear Trend Line
+  
+<p align="justify">
+To visualize the relationship between two variables, I learned about adding a linear trend line to a scatter plot. In Python, I used the seaborn library to plot a scatter plot with a linear regression trend line:
+ </p>
+
+<pre><code>
+fimport seaborn as sns
+
+# Load data
+data = sns.load_dataset("tips")
+
+# Plot scatter plot with linear regression trend line
+sns.regplot(x="total_bill", y="tip", data=data)
+</code></pre> 
+
+---
+
+### Intercept, Slope, and Equation
+  
+<p align="justify">
+I also learned about the intercept, slope, and equation of a linear regression model. The intercept represents the point at which the regression line intersects the y-axis (the value at the point where x is zero), while the slope represents the rate of change in the dependent variable for each unit change in the independent variable (the amount of the y value increases if you increase x by one). </p>
+<p align="justify">
+The equation of a linear regression line is typically written as y = mx + b, where y is the dependent variable, x is the independent variable, m is the slope of the line, and b is the intercept.
+</p>
+
+---  
+
+### Running a Regression Model with statsmodels
+  
+<p align="justify">
+In Python, I learned how to run a regression model using the statsmodels library. I used the ols() function from statsmodels.formula.api to create a model object and fit it to my data: </p>
+
+<pre><code>
+iimport pandas as pd
+import statsmodels.formula.api as smf
+
+# Read in data as a pandas dataframe
+data = pd.read_csv('data.csv')
+
+# Fit linear regression model using ols() function from statsmodels
+model = smf.ols(formula='y ~ x', data=data).fit()
+
+# Print summary of model results
+print(model.summary())
+
+</code></pre>   
+---
+
+</details>
   
   
