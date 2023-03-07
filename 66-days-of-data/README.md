@@ -665,6 +665,9 @@ In a longitudinal study, individuals are observed and measured over a long perio
   
 <p align="justify">
 Overall, I found today's lesson on the design of experiments to be very informative and relevant to my work as a data scientist. It is important to consider the various methods used in experimental and observational studies to ensure that the results are reliable and free from bias. </p>     
+
+---
+
 </details>
 
 
@@ -742,4 +745,208 @@ print(model.summary())
 
 </details>
   
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 13 - Revision of Data Visualization Techniques  </summary>
+
+>  🗓️ &nbsp; Date: 2023-03-06  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [An Intuitive Guide to Data Visualization in Python](https://www.analyticsvidhya.com/blog/2021/02/an-intuitive-guide-to-visualization-in-python/)
+
+<p align="justify">
+Today I took a break from statistics and revisited the different types of charts and visualizations that can be used to effectively present data. Good visualizations can help us understand and interpret data better. I reviewed various charts such as bar chart, pie chart, dot plot, box plot, histogram, line chart, scatter plot, heat map and data map, and also their implementation in Python.
+</p>
+
+---
+  
+### Bar Chart
+<p align="justify">
+A bar chart is a chart with rectangular bars plotted horizontally or vertically. They are used to show a comparison between different categories or groups. Bar charts are useful in showing changes over time or comparing different categories. </p>  
+
+<pre><code>
+import matplotlib.pyplot as plt
+
+# Data
+data = {'apples': 20, 'oranges': 15, 'pears': 25, 'bananas': 22}
+
+# Creating bar chart
+fig = plt.figure(figsize=(10, 5))
+
+# Add axes
+ax = fig.add_axes([0, 0, 1, 1])
+
+# Add data
+ax.bar(data.keys(), data.values())
+
+# Add title and labels
+ax.set_title('Fruit Comparison')
+ax.set_xlabel('Fruit')
+ax.set_ylabel('Quantity')
+
+# Show plot
+plt.show()
+</code></pre>   
+
+---
+
+### Pie Chart:
+<p align="justify">
+A pie chart is a circular chart divided into sectors, which represents numerical proportions of a whole. Pie charts are not recommended for showing many categories or groups as it can be difficult to read them. </p>
+
+<pre><code>
+import matplotlib.pyplot as plt
+
+# Data
+data = {'apples': 20, 'oranges': 15, 'pears': 25, 'bananas': 22}
+
+# Creating pie chart
+fig, ax = plt.subplots()
+
+# Add data
+ax.pie(data.values(), labels=data.keys(), autopct='%1.1f%%')
+
+# Add title
+ax.set_title('Fruit Comparison')
+
+# Show plot
+plt.show()
+
+</code></pre>     
+
+<p align="justify">
+Pie charts are often used for data visualization, but they are not recommended for several reasons. Firstly, they can be misleading as it is difficult to accurately compare the size of different slices of the pie. Human perception is not always accurate, and small differences in angle or size can make a significant difference in how the chart is interpreted. Secondly, pie charts are not effective at showing changes over time, which can be important in many data analysis scenarios. Lastly, pie charts are not accessible for people with visual impairments or color blindness. </p>
+
+---
+
+### Dot Plot
+<p align="justify">A dot plot is a chart consisting of dots to represent data points. It is useful in showing the distribution of data points and their frequency.
+ </p>  
+
+<pre><code>
+import matplotlib.pyplot as plt
+
+# Data
+data = [3, 5, 6, 2, 8, 4, 7, 1, 9]
+
+# Creating dot plot
+fig, ax = plt.subplots()
+
+# Add data
+ax.plot(data, 'o')
+
+# Add title and labels
+ax.set_title('Dot Plot')
+ax.set_xlabel('X-axis')
+ax.set_ylabel('Y-axis')
+
+# Show plot
+plt.show()
+</code></pre>    
+
+---
+
+### Box Plot 
+<p align="justify">
+A box plot is a chart used to show the distribution of data and its skewness. It is useful in identifying outliers and comparing data between groups or categories.
+ </p>  
+
+<pre><code>
+import matplotlib.pyplot as plt
+
+# Data
+data = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+# Creating box plot
+fig, ax = plt.subplots()
+
+# Add data
+ax.boxplot(data)
+
+# Add title and labels
+ax.set_title('Box Plot')
+ax.set_ylabel('Data')
+
+# Show plot
+plt.show()
+</code></pre>  
+
+---
+
+### Histogram
+<p align="justify"> A histogram is a graphical representation of the distribution of a dataset. It is an estimate of the probability distribution of a continuous variable and is commonly used for data visualization.
+ </p>  
+
+<pre><code>
+import matplotlib.pyplot as plt
+import numpy as np
+
+data = np.random.randn(1000)
+plt.hist(data, bins=30)
+plt.show()
+</code></pre>  
+
+---
+
+### Line chart:
+<p align="justify">A line chart is used to show trends over time or a continuous variable. It is commonly used to visualize stock prices, weather patterns, or other time series data.
+ </p>  
+
+<pre><code>
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 1, 5, 3]
+
+plt.plot(x, y)
+plt.show()
+
+</code></pre>  
+
+---
+
+### Scatter Plot
+<p align="justify">A scatter plot is used to show the relationship between two variables. It is commonly used to visualize data points in a two-dimensional space. 
+ </p>  
+
+<pre><code>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.random.randn(100)
+y = np.random.randn(100)
+
+plt.scatter(x, y)
+plt.show()
+
+</code></pre>  
+
+---
+
+### Heatmap
+<p align="justify">A heatmap is used to show the distribution of data points in a two-dimensional space. It is commonly used to visualize the correlation between variables or the frequency of events in a geographic area.
+ </p>  
+
+<pre><code>
+import seaborn as sns
+import numpy as np
+
+data = np.random.randn(100, 100)
+
+sns.heatmap(data)
+</code></pre>  
+
+### Data map
+<p align="justify"> A data map is used to visualize geographic data. It is commonly used to show the distribution of population, the prevalence of diseases, or other spatial phenomena. 
+ </p>  
+
+<pre><code>
+import folium
+
+m = folium.Map(location=[45.5236, -122.6750])
+</code></pre>  
+
+
+---
+
+</details>
+
+
   
