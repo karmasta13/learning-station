@@ -750,7 +750,7 @@ print(model.summary())
 
 <details> 
 <br/>
-<summary> &nbsp; 📖 &nbsp; Day 13 - Exploring Regression Analysis </summary>
+<summary> &nbsp; 📖 &nbsp; Day 13 - Linear Regression : Categorical explanatory variables </summary>
 
 >  🗓️ &nbsp; Date: 2023-03-06  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: Simple Linear Regression Modeling
 ](https://campus.datacamp.com/courses/introduction-to-regression-with-statsmodels-in-python/simple-linear-regression-modeling?ex=1)
