@@ -744,12 +744,105 @@ print(model.summary())
 ---
 
 </details>
+
+
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 13 - Exploring Regression Analysis </summary>
+
+>  🗓️ &nbsp; Date: 2023-03-06  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: Simple Linear Regression Modeling
+](https://campus.datacamp.com/courses/introduction-to-regression-with-statsmodels-in-python/simple-linear-regression-modeling?ex=1)
+
+<p align="justify">
+I learned about categorial explanatory variables, visualizing one numeric and one categorical values using sns.displot, and linear regression with categorical explanatory variables.
+
+
+---
+
+
+  
+<p align="justify">
+To visualize a numeric and a categorical variable, instead of scatterplot, histogram is used. I used sns.displot to give panel to all the categorical values </p>
+ 
+
+<pre><code>
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load example data from seaborn library
+tips = sns.load_dataset("tips")
+
+# Create a panel of histograms using displot, The col_wrap argument specifies how many plots to display per row, in this case 2
+sns.displot(data=tips, x="total_bill", col="day", col_wrap=2, bins=20)
+
+# Set plot titles and axis labels
+plt.subplots_adjust(top=0.9)
+plt.suptitle("Total Bill by Day of the Week")
+plt.xlabel("Total Bill ($)")
+plt.show()
+</code></pre> 
+
+---
+
+  
+<p align="justify">
+To perform linear regression with one numeric and one categorical variable, we can use the ols function from the statsmodels.formula.api module. Here's an example of how we can use ols to perform linear regression with a numeric and a categorical variable: </p>
+
+<pre><code>
+import statsmodels.formula.api as smf
+
+# Load example dataset
+tips = sns.load_dataset("tips")
+
+# Perform linear regression with intercept
+model_with_intercept = smf.ols('total_bill ~ day', data=tips).fit()
+
+# Print the model summary
+print(model_with_intercept.summary())
+
+</code></pre> 
+
+<p align="justify">
+When we perform linear regression with a categorical variable, we need to be careful about how we specify the model formula. By default, ols will include an intercept term in the model. However, this may not be appropriate when we have a categorical variable. If we include an intercept term, we will end up with a separate intercept for each category of the categorical variable. This can lead to misleading results.</p>
+
+  
+<p align="justify">
+To exclude the intercept term, we can include + 0 in the formula. For example: </p>
+
+
+<pre><code>
+import statsmodels.formula.api as smf
+
+# Load example dataset
+tips = sns.load_dataset("tips")
+
+# Perform linear regression without intercept
+model_without_intercept = smf.ols('total_bill ~ day + 0', data=tips).fit()
+
+# Print the model summary
+print(model_without_intercept.summary())
+
+</code></pre>   
+
+<p align="justify">
+When we perform linear regression without the intercept term, the coefficients represent the mean difference in the dependent variable between each category of the categorical variable and the reference category. The reference category is the one that is omitted from the formula.</p>
+
+<p align="justify">
+In general, if we have a categorical variable with more than two categories, we should exclude the intercept term. If we have a categorical variable with only two categories, we can include or exclude the intercept term, but the interpretation of the coefficients will be slightly different. </p>
+---
+
+</details>
+
+
+
   
 <details> 
 <br/>
-<summary> &nbsp; 📖 &nbsp; Day 13 - Revision of Data Visualization Techniques  </summary>
+<summary> &nbsp; 📖 &nbsp; Day 14 - Revision of Data Visualization Techniques  </summary>
 
->  🗓️ &nbsp; Date: 2023-03-06  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [An Intuitive Guide to Data Visualization in Python](https://www.analyticsvidhya.com/blog/2021/02/an-intuitive-guide-to-visualization-in-python/)
+>  🗓️ &nbsp; Date: 2023-03-07  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [An Intuitive Guide to Data Visualization in Python](https://www.analyticsvidhya.com/blog/2021/02/an-intuitive-guide-to-visualization-in-python/)
 
 <p align="justify">
 Today I took a break from statistics and revisited the different types of charts and visualizations that can be used to effectively present data. Good visualizations can help us understand and interpret data better. I reviewed various charts such as bar chart, pie chart, dot plot, box plot, histogram, line chart, scatter plot, heat map and data map, and also their implementation in Python.
