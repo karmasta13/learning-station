@@ -845,7 +845,7 @@ In general, if we have a categorical variable with more than two categories, we 
 >  🗓️ &nbsp; Date: 2023-03-07  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [An Intuitive Guide to Data Visualization in Python](https://www.analyticsvidhya.com/blog/2021/02/an-intuitive-guide-to-visualization-in-python/)
 
 <p align="justify">
-Today I took a break from statistics and revisited the different types of charts and visualizations that can be used to effectively present data. Good visualizations can help us understand and interpret data better. I reviewed various charts such as bar chart, pie chart, dot plot, box plot, histogram, line chart, scatter plot, heat map and data map, and also their implementation in Python.
+Today I revisited the different types of charts and visualizations that can be used to effectively present data. Good visualizations can help us understand and interpret data better. I reviewed various charts such as bar chart, pie chart, dot plot, box plot, histogram, line chart, scatter plot, heat map and data map, and also their implementation in Python.
 </p>
 
 ---
@@ -1041,5 +1041,15 @@ m = folium.Map(location=[45.5236, -122.6750])
 
 </details>
 
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 15 - Visualizing distribution </summary>
 
-  
+>  🗓️ &nbsp; Date: 2023-03-08  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: Visualizing distributions
+](https://campus.datacamp.com/courses/understanding-data-visualization/visualizing-distributions?ex=1)
+
+<p align="justify">
+From today, I am taking a career track: <a href="https://app.datacamp.com/learn/career-tracks/data-analyst-in-sql" target="_blank">Data Analyst in SQL</a> as I am taking a break from statistics and diving into SQL. As a part of this track, I did Understanding Data Visualization course where I got chance to revist the visualization tools along with best pratice for using colours and shapes. 
+</p>
+
+</details>
