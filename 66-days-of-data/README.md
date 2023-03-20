@@ -1060,8 +1060,8 @@ From today, I am taking a career track: <a href="https://app.datacamp.com/learn/
 <br/>
 <summary> &nbsp; 📖 &nbsp; Day 16 - SQL journey </summary>
 
->  🗓️ &nbsp; Date: 2023-03-20  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: Visualizing distributions
-](https://campus.datacamp.com/courses/understanding-data-visualization/visualizing-distributions?ex=1)
+>  🗓️ &nbsp; Date: 2023-03-20  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: [Datacamp: Introduction to SQL
+](https://app.datacamp.com/learn/courses/introduction-to-sql)
 
 <p align="justify">
 After a brief break from my data science learning journey, I decided to focus on enhancing my skills in SQL. I reviewed the basics and learned how to write subqueries, use aggregate functions, and normalize data.  I also gained an understanding of the importance of data normalization in improving data retrieval accuracy and efficiency. I'm excited to apply my new knowledge to real-world datasets and continue practicing writing more complex SQL queries.
