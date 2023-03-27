@@ -1112,3 +1112,79 @@ In this example, the keywords are written in the order: SELECT, FROM, WHERE, GRO
 
 </details>
 
+
+</details>
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 18 - Joining Data in SQL </summary>
+
+>  🗓️ &nbsp; Date: 2023-03-22  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/joining-data-in-sql" target="_blank"> Datacamp: Joining Data in SQL </a>
+
+<p align="justify">
+Today, I learned about using SQL to filter, compare, summarize, sort, and group data. I practiced writing queries on a database of films to determine which movies performed the best and how movie durations and budgets changed over time. </p>
+
+<p align="justify">
+On day 18, I delved into the topic of SQL joins and learned about different types of joins such as INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN, and CROSS JOIN. These joins are used to combine columns from one or more tables in a relational database through a lookup process. </p>
+
+<details>
+<summary>Syntax of Cross JOIN</summary>
+<p align="justify"> A CROSS JOIN, also known as a Cartesian product, returns all possible combinations of rows from two tables. It does not require any common columns between the tables. For example: </p>
+    
+<pre><code>
+ SELECT *
+ FROM table1
+ CROSS JOIN table2;
+ </code></pre> 
+ </details> 
+  
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
+
+<p align="justify"> Additionally, I also learned about semi joins, anti joins, and self joins. </p>
+<details> 
+<summary>Syntax and Description</summary>
+
+<p align="justify">
+A semi-join returns only the rows from the first table that match a specified condition in the second table. It is equivalent to using an IN or EXISTS subquery. For example:
+</p>
+
+<pre><code>
+SELECT *
+FROM table1
+WHERE EXISTS (
+  SELECT *
+  FROM table2
+  WHERE table1.id = table2.id
+);
+</code></pre> 
+
+<p align="justify">
+An anti-join returns only the rows from the first table that do not match a specified condition in the second table. It is equivalent to using a NOT IN or NOT EXISTS subquery. For example:
+</p>
+
+<pre><code>
+SELECT *
+FROM table1
+WHERE NOT EXISTS (
+  SELECT *
+  FROM table2
+  WHERE table1.id = table2.id
+);
+</code></pre> 
+ 
+<p align="justify">
+A self-join is a join in which a table is joined with itself. It can be used to compare rows within the same table or to create hierarchical relationships. For example:
+</p>
+
+<pre><code>
+SELECT e1.name, e2.name
+FROM employees e1
+JOIN employees e2 ON e1.manager_id = e2.id;
+</code></pre> 
+
+</details>
+
+<hr style="border: 0; height: 1px; width: 80%; text-align: center;">
+
+</details>
+
