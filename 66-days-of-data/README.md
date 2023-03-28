@@ -1122,10 +1122,7 @@ In this example, the keywords are written in the order: SELECT, FROM, WHERE, GRO
 >  🗓️ &nbsp; Date: 2023-03-22  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/joining-data-in-sql" target="_blank"> Datacamp: Joining Data in SQL </a>
 
 <p align="justify">
-Today, I learned about using SQL to filter, compare, summarize, sort, and group data. I practiced writing queries on a database of films to determine which movies performed the best and how movie durations and budgets changed over time. </p>
-
-<p align="justify">
-On day 18, I delved into the topic of SQL joins and learned about different types of joins such as INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN, and CROSS JOIN. These joins are used to combine columns from one or more tables in a relational database through a lookup process. </p>
+Today, I learned about using SQL to filter, compare, summarize, sort, and group data. I practiced writing queries on a database of films to determine which movies performed the best and how movie durations and budgets changed over time. I delved into the topic of SQL joins and learned about different types of joins such as INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN, and CROSS JOIN. These joins are used to combine columns from one or more tables in a relational database through a lookup process. </p>
 
 <details>
 <summary>Syntax of Cross JOIN</summary>
@@ -1185,6 +1182,62 @@ JOIN employees e2 ON e1.manager_id = e2.id;
 </details>
 
 <hr style="border: 0; height: 1px; width: 80%; text-align: center;">
+
+</details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 19 - (Continued) Joining Data in SQL </summary>
+
+>  🗓️ &nbsp; Date: 2023-03-22  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/joining-data-in-sql" target="_blank"> Datacamp: Joining Data in SQL </a>
+
+<p align="justify">
+Today, I learned about using set theory operations in SQL, including UNION, UNION ALL, INTERSECT, and EXCEPT clauses. These operations are different from join operations and are used to combine or compare data from two or more tables. </p>
+
+<br/><img src="./images/set_theory.png" alt="set_thoery_chart">
+
+
+<p align="justify">
+The UNION clause combines the result sets of two or more SELECT statements into a single result set. It eliminates duplicate rows in the result set. The UNION ALL clause also combines the result sets of two or more SELECT statements into a single result set, but it includes all rows, including duplicates.
+
+Here's an example of UNION: </p>
+    
+<pre><code>
+SELECT column1, column2
+FROM table1
+UNION
+SELECT column1, column2
+FROM table2;
+</code></pre> 
+  
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
+
+<p align="justify">
+The INTERSECT clause returns only the rows that appear in both result sets of two SELECT statements. It is used to compare two result sets and find the common rows. Here's an example: </p>
+    
+<pre><code>
+SELECT column1, column2
+FROM table1
+INTERSECT
+SELECT column1, column2
+FROM table2;
+</code></pre> 
+  
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
+
+<p align="justify">
+The EXCEPT clause returns only the rows that appear in the first result set but not in the second result set of two SELECT statements. It is used to compare two result sets and find the unique rows. Here's an example:</p>
+    
+<pre><code>
+SELECT column1, column2
+FROM table1
+EXCEPT
+SELECT column1, column2
+FROM table2;
+</code></pre> 
+  
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
 
 </details>
 
