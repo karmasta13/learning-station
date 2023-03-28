@@ -1190,7 +1190,7 @@ JOIN employees e2 ON e1.manager_id = e2.id;
 <br/>
 <summary> &nbsp; 📖 &nbsp; Day 19 - (Continued) Joining Data in SQL </summary>
 
->  🗓️ &nbsp; Date: 2023-03-22  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/joining-data-in-sql" target="_blank"> Datacamp: Joining Data in SQL </a>
+>  🗓️ &nbsp; Date: 2023-03-23  &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/joining-data-in-sql" target="_blank"> Datacamp: Joining Data in SQL </a>
 
 <p align="justify">
 Today, I learned about using set theory operations in SQL, including UNION, UNION ALL, INTERSECT, and EXCEPT clauses. These operations are different from join operations and are used to combine or compare data from two or more tables. </p>
@@ -1235,6 +1235,50 @@ FROM table1
 EXCEPT
 SELECT column1, column2
 FROM table2;
+</code></pre> 
+  
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
+
+</details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 20 - (Continued) Joining Data in SQL </summary>
+
+>  🗓️ &nbsp; Date: 2023-03-24 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/joining-data-in-sql" target="_blank"> Datacamp: Joining Data in SQL </a>
+
+<p align="justify">
+On day 19, I began investigating semi-joins and anti-joins in SQL. These are powerful tools for filtering data and analyzing relationships between tables. Semi-joins allow me to filter data based on a condition in another table, while anti-joins allow me to identify records that do not have a corresponding match in another table. </p>
+
+<p align="justify">
+Semi-joins proved useful for filtering data from one table based on matching data in another table. This can be achieved using the EXISTS keyword or the IN keyword with a subquery.
+
+Here's an example of Semi-joins: </p>
+    
+<pre><code>
+SELECT *
+FROM employees
+WHERE EXISTS (
+  SELECT *
+  FROM departments
+  WHERE employees.department_id = departments.department_id
+)
+</code></pre> 
+  
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
+
+<p align="justify">
+Similarly, anti-joins were helpful in filtering out data from one table that did not exist in another table. This was achieved using the NOT EXISTS keyword or the NOT IN keyword with a subquery. Example: </p>
+    
+<pre><code>
+SELECT *
+FROM employees
+WHERE NOT EXISTS (
+  SELECT *
+  FROM departments
+  WHERE employees.department_id = departments.department_id
+)
 </code></pre> 
   
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
