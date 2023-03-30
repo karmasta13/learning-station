@@ -1360,3 +1360,69 @@ In the above query, we're selecting the name and salary columns from the employe
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
 
 </details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 23 - Exploring Nested and Correlated Subqueries and CTE </summary>
+
+>  🗓️ &nbsp; Date: 2023-03-29 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://campus.datacamp.com/courses/data-manipulation-in-sql/correlated-queries-nested-queries-and-common-table-expressions?ex=1" target="_blank"> Datacamp: Correlated Queries, Nested Queries, and Common Table Expressions
+</a>
+
+<p align="justify">
+Today's journal is about learning nested and correlated subqueries and common table expressions (CTEs).</p>
+
+<p align="justify">
+Nested subquery is a query inside another query. It is used to retrieve data that is dependent on the output of the outer query. It is useful when you need to filter data from one table based on the values in another table. Here's an example of a nested subquery:</p>
+    
+<pre><code>
+SELECT name, 
+       (SELECT AVG(price) 
+        FROM products 
+        WHERE category = categories.category) AS avg_price 
+FROM categories;
+</code></pre> 
+  
+<p align="justify">
+This query returns the name of each category, along with the average price of all products in that category. The subquery (SELECT AVG(price) FROM products WHERE category = categories.category) is nested inside the main query, and it calculates the average price for each category. </p>  
+  
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
+
+<p align="justify">
+Correlated subquery is a subquery that refers to a column from the outer query. It is useful when you need to filter data from one table based on the values in another table, but the subquery needs to reference data from the outer query. Here's an example of a correlated subquery:
+</p>
+    
+<pre><code>
+SELECT name, price 
+FROM products p1 
+WHERE price = (SELECT MAX(price) 
+               FROM products p2 
+               WHERE p1.category = p2.category);
+</code></pre> 
+  
+<p align="justify">
+This query returns the name and price of the most expensive product in each category. The subquery (SELECT MAX(price) FROM products p2 WHERE p1.category = p2.category) is correlated because it depends on data from the outer query. It finds the maximum price for the category of the product in the outer query. </p>  
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
+  
+<p align="justify">
+Common table expression (CTE) is a temporary named result set that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement. It is useful when you need to use the same query multiple times in a larger query. Here's an example of a CTE :
+</p>
+    
+<pre><code>
+WITH expensive_products AS (
+    SELECT name, price 
+    FROM products 
+    WHERE price > 100
+)
+SELECT name, price 
+FROM expensive_products 
+WHERE category = 'Electronics';
+</code></pre> 
+  
+<p align="justify">
+This query first defines a CTE called expensive_products, which contains all products with a price greater than 100. The second query then selects the name and price of all expensive products in the Electronics category. By using a CTE, we can break down a complex query into smaller, more manageable parts. </p>  
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>
