@@ -1426,3 +1426,53 @@ This query first defines a CTE called expensive_products, which contains all pro
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
 
 </details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 24 - Exploring Window Functions in SQL </summary>
+
+>  🗓️ &nbsp; Date: 2023-03-29 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://campus.datacamp.com/courses/data-manipulation-in-sql/window-functions-4?ex=1" target="_blank"> Datacamp: Window Functions
+</a>
+
+<p align="justify">
+Today, I learned about window functions and their use in passing aggregate functions over a dataset.</p>
+
+<p align="justify">
+OVER: A window function that allows you to perform aggregate functions on a specific subset of rows in your query.</p>
+    
+<pre><code>
+SELECT column1, column2, SUM(column3) OVER () AS total_sum FROM my_table;
+</code></pre> 
+  
+<p align="justify">
+OVER with Partition: A variation of the OVER function that allows you to partition your query into subsets based on one or more columns. </p>  
+
+<pre><code>
+SELECT column1, column2, SUM(column3) OVER (PARTITION BY column4) AS partition_sum FROM my_table;
+</code></pre>   
+  
+<p align="justify">
+Sliding Windows: A type of window function that allows you to specify a range of rows to include in your aggregate calculation, rather than just a specific subset. The PRECEDING keyword allows you to refer to a specific number of rows before the current row, while the FOLLOWING keyword refers to rows that come after the current row. For example, ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING would refer to the current row, as well as the row before and after it. The UNBOUNDED PRECEDING and UNBOUNDED FOLLOWING keywords allow you to reference all rows that come before or after the current row, respectively. </p>
+    
+<pre><code>
+SELECT column1, column2, SUM(column3) OVER (ORDER BY column4 ROWS BETWEEN 3 PRECEDING AND CURRENT ROW) AS sliding_sum FROM my_table;
+</code></pre> 
+  
+<p align="justify">
+RANK(): A window function that assigns a rank to each row based on a specified ordering. </p>  
+    
+<pre><code>
+SELECT column1, column2, RANK() OVER (ORDER BY column3 DESC) AS rank FROM my_table;
+</code></pre> 
+  
+<p align="justify">
+ABS(): An function that returns the absolute value of a specified column. </p>  
+
+<pre><code>
+SELECT column1, column2, ABS(column3) FROM my_table;
+</code></pre>   
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>
