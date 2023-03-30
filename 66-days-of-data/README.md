@@ -1288,7 +1288,7 @@ WHERE NOT EXISTS (
 
 <details> 
 <br/>
-<summary> &nbsp; 📖 &nbsp; Day 21 -Using CASE WHEN Statements and Aggregating Data in SQL</summary>
+<summary> &nbsp; 📖 &nbsp; Day 21 - Using CASE WHEN Statements and Aggregating Data in SQL</summary>
 
 >  🗓️ &nbsp; Date: 2023-03-27 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://campus.datacamp.com/courses/data-manipulation-in-sql/well-take-the-case?ex=1" target="_blank"> Datacamp: We'll take the CASE </a>
 
@@ -1321,6 +1321,42 @@ FROM orders
 GROUP BY customer_name;
 </code></pre> 
   
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
+
+</details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 22 - Exploring Subqueries in SQL"</summary>
+
+>  🗓️ &nbsp; Date: 2023-03-28 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://campus.datacamp.com/courses/data-manipulation-in-sql/short-and-simple-subqueries?ex=1" target="_blank"> Datacamp: Short and Simple Subqueries </a>
+
+<p align="justify">
+Today, I learned about subqueries in SQL. Subqueries are queries nested inside other queries and are used to retrieve data that will be used in the main query. I learned that subqueries can be used in the SELECT, FROM, and WHERE clauses of a query. </p>
+
+<p align="justify">
+One example of using a subquery in the SELECT clause is to retrieve the maximum value of a column in a table and use it in the main query. Here's an example: </p>
+    
+<pre><code>
+SELECT name, salary, (SELECT MAX(salary) FROM employees) AS max_salary
+FROM employees;
+</code></pre> 
+  
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
+
+<p align="justify">
+Another example of using a subquery is to filter the results of a main query based on a condition in another table. Here's an example:</p>
+    
+<pre><code>
+SELECT name, salary
+FROM employees
+WHERE department_id IN (SELECT department_id FROM departments WHERE location = 'New York');
+</code></pre> 
+  
+<p align="justify">
+In the above query, we're selecting the name and salary columns from the employees table, and using a subquery in the WHERE clause to retrieve the department IDs for departments located in New York from the departments table. We're then filtering the results of the main query based on the department IDs returned by the subquery.</p>  
+
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">
 
 </details>
