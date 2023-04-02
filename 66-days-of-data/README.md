@@ -1432,7 +1432,7 @@ This query first defines a CTE called expensive_products, which contains all pro
 <br/>
 <summary> &nbsp; 📖 &nbsp; Day 24 - Exploring Window Functions in SQL </summary>
 
->  🗓️ &nbsp; Date: 2023-03-29 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://campus.datacamp.com/courses/data-manipulation-in-sql/window-functions-4?ex=1" target="_blank"> Datacamp: Window Functions
+>  🗓️ &nbsp; Date: 2023-03-30 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://campus.datacamp.com/courses/data-manipulation-in-sql/window-functions-4?ex=1" target="_blank"> Datacamp: Window Functions
 </a>
 
 <p align="justify">
@@ -1472,6 +1472,21 @@ ABS(): An function that returns the absolute value of a specified column. </p>
 <pre><code>
 SELECT column1, column2, ABS(column3) FROM my_table;
 </code></pre>   
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 25 - Exploring Python Fundamentals in the Applied Data Science Specialization </summary>
+
+>  🗓️ &nbsp; Date: 2023-03-31 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://coursera.org/share/cf432eb4514df81567a668806d5c9dc4" target="_blank"> Datacamp: Window Functions
+</a>
+
+<p align="justify">
+Today, I decided to take a break from SQL and enrolled in one of the courses for Applied Data Science Specialization on Coursera called 'Python for Data Science, AI & Development'. I completed the first two weeks of the course, which were mainly revision on the basics of Python. During the course, I had a revision on expressions and variables, data types, list and tuples, dictionaries, and sets.
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
 
