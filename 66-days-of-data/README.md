@@ -1482,11 +1482,33 @@ SELECT column1, column2, ABS(column3) FROM my_table;
 <br/>
 <summary> &nbsp; 📖 &nbsp; Day 25 - Exploring Python Fundamentals in the Applied Data Science Specialization </summary>
 
->  🗓️ &nbsp; Date: 2023-03-31 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://coursera.org/share/cf432eb4514df81567a668806d5c9dc4" target="_blank"> Datacamp: Window Functions
+>  🗓️ &nbsp; Date: 2023-03-31 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://coursera.org/share/cf432eb4514df81567a668806d5c9dc4" target="_blank"> Coursera: Python for Data Science, AI & Development
 </a>
 
 <p align="justify">
 Today, I decided to take a break from SQL and enrolled in one of the courses for Applied Data Science Specialization on Coursera called 'Python for Data Science, AI & Development'. I completed the first two weeks of the course, which were mainly revision on the basics of Python. During the course, I had a revision on expressions and variables, data types, list and tuples, dictionaries, and sets.
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 26 - PostgreSQL Summary Stats and Window Functions </summary>
+
+>  🗓️ &nbsp; Date: 2023-04-01 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/postgresql-summary-stats-and-window-functions" target="_blank"> Datacamp: PostgreSQL Summary Stats and Window Functions
+</a>
+
+<p align="justify">
+On day 26, I dived more into window functions in SQL. I learned that window functions are used to perform calculations across rows in a result set based on a defined window or frame. I learned about two basic window function subclauses, ORDER BY and PARTITION BY indepth. </p>
+
+<p align="justify"> 
+I also learned about four window functions, two of which are relative - LAG(column, n) and LEAD(column, n) - and two of which are absolute - FIRST_VALUE(column) and LAST_VALUE(column). I learned that the difference between the two is that relative functions look at a certain number of rows before or after the current row, while absolute functions look at all rows in the window frame. I also learned their syntax.
+</p>  
+
+<p align="justify">
+then learned about ranking functions, which are used to assign a rank or position to each row based on its value. I learned about three ranking functions - RANK(), ROW_NUMBER(), and DENSE_RANK() - and the difference between them. Lastly, I learned about paging using NTILE(n) and why it is done.  </p>  
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
 
