@@ -1513,3 +1513,95 @@ then learned about ranking functions, which are used to assign a rank or positio
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
 
 </details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 27 - (Continued) PostgreSQL Summary Stats and Window Functions </summary>
+
+>  🗓️ &nbsp; Date: 2023-04-02 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/postgresql-summary-stats-and-window-functions" target="_blank"> Datacamp: PostgreSQL Summary Stats and Window Functions
+</a>
+
+<p align="justify">
+Today, I learned more on Aggregate window functions and frames as well as some other functions as below: </p>
+
+<p align="justify">
+Max and Sum Window Functions: The MAX() and SUM() functions can be used as window functions to calculate the maximum and sum of a specified column over a window. The syntax for using them as window functions is similar to their regular syntax, except that you include an OVER clause that specifies the window you want to use. Here's an example using MAX(): </p>
+    
+<pre><code>
+SELECT column1, column2, MAX(column3) OVER (PARTITION BY column2) as max_value
+FROM my_table;
+</code></pre> 
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+  
+<p align="justify">
+Frames and LAST_VALUE:
+A frame is a subset of rows in a window that you want to perform an operation on. You can define a frame using the ROWS or RANGE keyword followed by a frame specification. One function that is commonly used with frames is LAST_VALUE(), which returns the last value in a specified frame. Here's an example using RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING to define a frame:
+</p>  
+
+<pre><code>
+SELECT column1, column2, LAST_VALUE(column3) OVER (ORDER BY column2 RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) as last_value
+FROM my_table;
+</code></pre> 
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+<p align="justify">
+Moving Average and Moving Sum:
+A moving average or moving sum is a calculation that takes a rolling window of a specified number of rows and returns the average or sum of those rows. You can use the ROWS keyword to specify the size of the window. Here's an example using AVG() to calculate a 3-row moving average:
+</p>
+    
+<pre><code>
+SELECT column1, column2, AVG(column3) OVER (ORDER BY column2 ROWS 3 PRECEDING) as moving_average
+FROM my_table;
+</code></pre> 
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+  
+<p align="justify">
+Rows vs. Range:
+The difference between ROWS and RANGE is how the frame is defined. With ROWS, the frame is defined based on the physical position of the rows in the window. With RANGE, the frame is defined based on the value of the rows in the window. 
+</p>
+    
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+ 
+<p align="justify">
+Pivoting:
+Pivoting is a technique for converting row data into column data. You can use the PIVOT keyword followed by an aggregate function and a FOR clause to pivot data based on a specified column. 
+ </p>  
+ 
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+ 
+<p align="justify">
+Rollup and Cube:
+ROLLUP and CUBE are extensions to GROUP BY that allow you to create subtotals and grand totals for specified columns. ROLLUP creates subtotals for a specified set of columns, while CUBE creates subtotals for all possible combinations of columns. Here's an example using ROLLUP to create subtotals for column1 and column2:
+ </p> 
+
+<pre><code>
+SELECT column1, column2, SUM(column3)
+FROM my_table
+GROUP BY ROLLUP (column1, column2);
+</code></pre>  
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+<p align="justify">
+COALESCE() and STRING_AGG():
+COALESCE() is a function that returns the first non-null value in a list of expressions. The STRING_AGG() function is used to concatenate strings from multiple rows into a single string with a specified separator.
+ </p> 
+ 
+<pre><code>
+SELECT COALESCE(column1, column2, column3, 'default_value') AS new_column
+FROM my_table;
+</code></pre>  
+
+<pre><code>
+SELECT category, STRING_AGG(value, ',') AS concatenated_values
+FROM my_table
+GROUP BY category;
+</code></pre>  
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>
