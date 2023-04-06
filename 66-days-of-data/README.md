@@ -1605,3 +1605,189 @@ GROUP BY category;
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
 
 </details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 28 - Functions for Manipulating Data in PostgreSQL </summary>
+
+>  🗓️ &nbsp; Date: 2023-04-03 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
+
+</a>
+
+<p align="justify">
+I learned about the properties and characteristics of common data types in SQL, including strings, numerics, and arrays, and how to retrieve information about the database.  </p> 
+
+<p align="justify">
+I learned about the properties and characteristics of common data types in SQL and how to retrieve information about the database and how to determine the data type from an existing table as well as insert statement with arrays: </p>
+    
+<pre><code>
+-- Determining data type from existing table:
+SELECT column_name, data_type
+FROM information_schema.columns
+WHERE table_name = 'my_table';
+</code></pre> 
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+  
+<p align="justify">
+I also learned about the interval data type in SQL, which is used to store time intervals such as hours, minutes, and seconds. 
+</p>  
+
+<pre><code>
+-- To create
+CREATE TABLE Movies (
+    title VARCHAR(255),
+    duration INTERVAL
+);
+
+-- To insert
+INSERT INTO Movies (title, duration)
+VALUES ('The Lord of the Rings: The Fellowship of the Ring', INTERVAL '2 hours 58 minutes');
+
+-- To perform calculations with interval data type
+SELECT order_date + INTERVAL '1 week' AS new_order_date
+FROM orders;
+
+-- Add an interval of 1 day and 3 hours to the event_time column
+SELECT event_time + INTERVAL '1 day 3 hours' AS new_event_time
+FROM my_table;
+</code></pre> 
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+<p align="justify">
+Next, I went through arrays in SQL and how to access and search them. I learned about the @> operator, which checks if an array contains a certain element or another array.  
+</p>
+    
+<pre><code>
+-- creating array
+CREATE TABLE grade (
+  student_id INT,
+  email TEXT[][],
+  testscore INT[]
+  
+-- Insert
+INSERT INTO grade (student_id, email, testscore)
+VALUES
+  (1, '{{"jane@example.com","john@example.com"},{"jdoe@example.com"}}', '{85, 90, 92}'),
+  (2, '{{"bob@example.com","jane@example.com"},{"jsmith@example.com"}}', '{78, 88, 95, 82}');
+
+-- To access
+SELECT email[1][1] FROM grade WHERE student_id = 1;
+-- This will return jane@example.com as index in sql start from 1
+
+SELECT * FROM grade WHERE email @> '{{"jane@example.com"}}';
+SELECT * FROM grade WHERE 90 = any(testscore);
+</code></pre> 
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+  
+<p align="justify">
+The concatenation operator is used to combine two or more strings together. In SQL, the concatenation operator is represented by two vertical bars (||). Here's an example:
+</p>
+
+<pre><code>
+SELECT 'Hello ' || 'World'; -- Output: 'Hello World'
+
+--  CONCAT() function  can also be used to concatenate strings:
+SELECT CONCAT('Hello ', 'World'); -- Output: 'Hello World'
+
+</code> </pre>
+    
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+ 
+<p align="justify">
+Changing Case of Strings:
+In SQL, you can change the case of characters in a string using various functions:
+
+UPPER(): converts all characters to uppercase.
+LOWER(): converts all characters to lowercase.
+INITCAP(): converts the first character of each word to uppercase.
+ </p>  
+ 
+<pre><code>
+SELECT UPPER('hello world'); -- Output: 'HELLO WORLD'
+SELECT LOWER('HELLO WORLD'); -- Output: 'hello world'
+SELECT INITCAP('hello world'); -- Output: 'Hello World'
+</code> </pre>
+ 
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+ 
+<p align="justify">
+Replace Function:
+The REPLACE() function is used to replace all occurrences of a substring in a string with a new substring. Here's an example:
+ </p> 
+
+<pre><code>
+SELECT REPLACE('hello world', 'world', 'there'); -- Output: 'hello there'
+</code></pre>  
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+<p align="justify">
+Reverse Function:
+The REVERSE() function is used to reverse the order of characters in a string. Here's an example:
+ </p> 
+ 
+<pre><code>
+SELECT REVERSE('hello world'); -- Output: 'dlrow olleh'
+</code></pre>  
+</pre></code>
+
+<p align="justify">
+Parsing String and Character Data:
+SQL provides various functions for parsing string and character data:
+<ul>
+<li>CHAR_LENGTH(): returns the number of characters in a string.</li>
+<li>LENGTH(): returns the length of a string.</li>
+<li>POSITION(): returns the position of a substring in a string.</li>
+<li>STRPOS(): same as POSITION() but with the arguments in the opposite order. </li>
+<li>LEFT(): returns the leftmost characters of a string. </li>
+<li>RIGHT(): returns the rightmost characters of a string. </li>
+<li>SUBSTRING(): returns a substring from a string. </li>
+</ul>
+ </p> 
+ 
+<pre><code>
+SELECT CHAR_LENGTH('hello world'); -- Output: 11
+SELECT LENGTH('hello world'); -- Output: 11
+SELECT POSITION('world' IN 'hello world'); -- Output: 7
+SELECT STRPOS('hello world', 'world'); -- Output: 7
+SELECT LEFT('hello world', 5); -- Output: 'hello'
+SELECT RIGHT('hello world', 5); -- Output: 'world'
+SELECT SUBSTRING('hello world', 7); -- Output: 'world'
+</code></pre>  
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 29 - (Continued) Functions for Manipulating Data in PostgreSQL </summary>
+
+>  🗓️ &nbsp; Date: 2023-04-04 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
+
+<p align="justify">
+Today, [Need to write] 
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 30 - (Continued) Functions for Manipulating Data in PostgreSQL </summary>
+
+>  🗓️ &nbsp; Date: 2023-04-06 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
+
+<p align="justify">
+Today, [Need to write] 
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>
+
