@@ -2062,12 +2062,17 @@ SELECT date_trunc('month', '2022-03-15');
 
 <details> 
 <br/>
-<summary> &nbsp; 📖 &nbsp; Day 32 - Something else </summary>
+<summary> &nbsp; 📖 &nbsp; Day 32 - Exploring Python Fundamentals: A Break from SQL Learning Journey </summary>
 
->  🗓️ &nbsp; Date: 2023-04-08 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
+>  🗓️ &nbsp; Date: 2023-04-08 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://www.coursera.org/learn/python-for-applied-data-science-ai/home/week/3" target="_blank"> Coursera: Python Programming Fundamentals (Week 3)
 
 <p align ="justify">
-</p>
+  Today, I took a break from learning SQL and decided to revise my Python fundamentals. I went through the module on conditions and branching, where I learned how to use if-else statements to execute code based on a certain condition. Then, I learned about loops and how they can be used to iterate over sequences.
+  </p>
+
+<p align ="justify">
+I also reviewed creating functions to perform specific tasks and how exception handling can be used to catch errors. Finally, I delved into the concept of classes and how they are used to create objects.Going back to these fundamentals was a great refresher for me, and it helped me solidify my understanding of basic Python concepts. I am excited to continue building my knowledge of Python and SQL to become a well-rounded data science person.
+  </p>
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
 
