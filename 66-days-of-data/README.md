@@ -2082,11 +2082,12 @@ I also reviewed creating functions to perform specific tasks and how exception h
 
 <details> 
 <br/>
-<summary> &nbsp; 📖 &nbsp; Day 33 - (Continued) Functions for Manipulating Data in PostgreSQL </summary>
+<summary> &nbsp; 📖 &nbsp; Day 33 - Exploratory Data Analysis in SQL </summary>
 
->  🗓️ &nbsp; Date: 2023-04-10 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
+>  🗓️ &nbsp; Date: 2023-04-10 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: Exploratory Data Analysis in SQL
 
 <p align ="justify">
+ On day 33, I delved into PostgresSQL database and explored ways to identify tables and foreign keys that link them. The process involved looking for missing values, counting observations, and joining tables to understand their relationships. As I continued with the exploration, I also learned about coalescing and casting data. I found the process of exploring a database informative and interesting, as it helped me understand how data is organized and related to each other in a database. Overall, it was a productive and enlightening learning experience
 </p>
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
@@ -2097,9 +2098,9 @@ I also reviewed creating functions to perform specific tasks and how exception h
 
 <details> 
 <br/>
-<summary> &nbsp; 📖 &nbsp; Day 34 - (Continued) Functions for Manipulating Data in PostgreSQL </summary>
+<summary> &nbsp; 📖 &nbsp; Day 34 - (Continued) Exploratory Data Analysis in SQL</summary>
 
->  🗓️ &nbsp; Date: 2023-04-11 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
+>  🗓️ &nbsp; Date: 2023-04-11 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: Exploratory Data Analysis in SQL
 
 <p align ="justify">
 </p>
@@ -2107,4 +2108,19 @@ I also reviewed creating functions to perform specific tasks and how exception h
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
 
 </details>
+  
+  
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 35 - (Continued) Exploratory Data Analysis in SQL</summary>
+
+>  🗓️ &nbsp; Date: 2023-04-11 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: Exploratory Data Analysis in SQL
+
+<p align ="justify">
+</p>
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>  
 
