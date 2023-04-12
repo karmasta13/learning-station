@@ -1866,7 +1866,125 @@ SELECT date_trunc('month', '2022-03-15');
 >  🗓️ &nbsp; Date: 2023-04-06 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
 
 <p align ="justify">
+  In day 30, I learned about different string and character manipulation functions in SQL, such as concat, case conversatione etc. 
 </p>
+  
+ <br>
+  
+<table>
+  <thead>
+    <tr>
+      <th>Function</th>
+      <th>Description</th>
+      <th>Code Example</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>concat()</td>
+      <td>Used to concatenate two or more strings together</td>
+      <td>SELECT CONCAT('Hello', ' ', 'World');</td>
+      <td>Hello World</td>
+    </tr>
+    <tr>
+      <td>upper()</td>
+      <td>Used to convert all characters in a string to uppercase</td>
+      <td>SELECT UPPER('Hello World');</td>
+      <td>HELLO WORLD</td>
+    </tr>
+    <tr>
+      <td>lower()</td>
+      <td>Used to convert all characters in a string to lowercase</td>
+      <td>SELECT LOWER('Hello World');</td>
+      <td>hello world</td>
+    </tr>
+    <tr>
+      <td>initcap()</td>
+      <td>Used to capitalize the first character of each word in a string</td>
+      <td>SELECT INITCAP('hello world');</td>
+      <td>Hello World</td>
+    </tr>
+    <tr>
+      <td>replace()</td>
+      <td>Used to replace all occurrences of a specified substring in a string with another substring</td>
+      <td>SELECT REPLACE('Hello World', 'World', 'Universe');</td>
+      <td>Hello Universe</td>
+    </tr>
+    <tr>
+      <td>reverse()</td>
+      <td>Used to reverse the order of characters in a string</td>
+      <td>SELECT REVERSE('Hello World');</td>
+      <td>dlroW olleH</td>
+    </tr>
+    <tr>
+      <td>char_length()</td>
+      <td>Used to get the length of a string in characters</td>
+      <td>SELECT CHAR_LENGTH('Hello World');</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>position()</td>
+      <td>Used to get the position of a substring in a string</td>
+      <td>SELECT POSITION('World' IN 'Hello World');</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>strpos()</td>
+      <td>Used to get the position of a substring in a string</td>
+      <td>SELECT STRPOS('Hello World', 'World');</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>left()</td>
+      <td>Used to get a specified number of characters from the beginning of a string</td>
+      <td>SELECT LEFT('Hello World', 5);</td>
+      <td>Hello</td>
+    </tr>
+    <tr>
+      <td>right()</td>
+      <td>Used to get a specified number of characters from the end of a string</td>
+      <td>SELECT RIGHT('Hello World', 5);</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <td>substring()</td>
+      <td>Used to get a specified part of a string</td>
+      <td>SELECT SUBSTRING('Hello World', 7, 5);</td>
+      <td>World</td>
+    </tr>
+    <td>trim()</td>
+    <td>Used to remove whitespace from the beginning and/or end of a string</td>
+    <td>SELECT TRIM(' Hello World ')</td>
+    <td>Hello World</td>
+  </tr>
+    <tr>
+      <td>lpad()</td>
+      <td>Used to add padding to the left side of a string</td>
+      <td>SELECT LPAD('Hello', 10, '.')</td>
+      <td>.....Hello</td>
+    </tr>
+    <tr>
+      <td>rpad()</td>
+      <td>Used to add padding to the right side of a string</td>
+      <td>SELECT RPAD('Hello', 10, '.')</td>
+      <td>Hello.....</td>
+    </tr>
+    <tr>
+      <td>ltrim()</td>
+      <td>Used to remove whitespace from the beginning of a string</td>
+      <td>SELECT LTRIM(' Hello World')</td>
+      <td>Hello World</td>
+    </tr>
+    <tr>
+      <td>rtrim()</td>
+      <td>Used to remove whitespace from the end of a string</td>
+      <td>SELECT RTRIM('Hello World ')</td>
+      <td>Hello World</td>
+    </tr>
+    
+  </tbody>
+</table>  
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
 
