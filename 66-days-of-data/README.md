@@ -1998,7 +1998,61 @@ SELECT date_trunc('month', '2022-03-15');
 >  🗓️ &nbsp; Date: 2023-04-07 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
 
 <p align ="justify">
+  Today, I learned more advanced capabilities of postgresSQL like full text search extentions. 
 </p>
+ 
+<br>
+
+  <table>
+  <tr>
+    <th>Function</th>
+    <th>Description</th>
+    <th>Code Example</th>
+    <th>Answer</th>
+  </tr>
+  <tr>
+    <td>to_tsvector(title) @@ to_tsquery('elf');</td>
+    <td>Used to search for occurrences of a word or phrase in a specified column using full-text search</td>
+    <td>SELECT title FROM books WHERE to_tsvector(title) @@ to_tsquery('elf');</td>
+    <td>The Hobbit</td>
+  </tr>
+  <tr>
+    <td>enum()</td>
+    <td>Used to create a new enumerated data type</td>
+    <td>CREATE TYPE dayofweek AS ENUM ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');</td>
+    <td>dayofweek data type created</td>
+  </tr>
+  <tr>
+    <td>SELECT typname, typcategory FROM pg_type WHERE typname='dayofweek';</td>
+    <td>Used to get information about user-defined data types</td>
+    <td>SELECT typname, typcategory FROM pg_type WHERE typname='dayofweek';</td>
+    <td>dayofweek | E</td>
+  </tr>
+  <tr>
+    <td>PostGIS</td>
+    <td>Used to add support for geographic objects to PostgreSQL</td>
+    <td>CREATE EXTENSION postgis;</td>
+    <td>PostGIS extension installed</td>
+  </tr>
+  <tr>
+    <td>PostPic</td>
+    <td>Used to add support for image processing to PostgreSQL</td>
+    <td>CREATE EXTENSION postgis;</td>
+    <td>PostPic extension installed</td>
+  </tr>
+  <tr>
+    <td>fuzzystrmatch</td>
+    <td>Used to perform fuzzy string matching</td>
+    <td>SELECT soundex('John'), soundex('Jon');</td>
+    <td>J500 | J500</td>
+  </tr>
+  <tr>
+    <td>similarity()</td>
+    <td>Used to calculate the similarity between two strings</td>
+    <td>SELECT similarity('cat', 'cot');</td>
+    <td>0.5</td>
+  </tr>
+</table>
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
 
