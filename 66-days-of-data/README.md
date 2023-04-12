@@ -1771,9 +1771,90 @@ SELECT SUBSTRING('hello world', 7); -- Output: 'world'
 >  🗓️ &nbsp; Date: 2023-04-04 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
 
 <p align="justify">
-Today, [Need to write] 
+On day 29, I learned about different date and time functions in SQL. Some of the functions I learned about include age(), INTERVAL, cast(), current_timestamp, extract(), date_part(), and date_trunc().
+
+<p align ="justify">
+The AGE function returns a numeric value that represents the number of full years, full months, and full days between the current timestamp and the argument.
+</p>
+
+<pre><code>
+SELECT age(timestamp '2015-01-15', timestamp '1972-12-28');
+-- output--
+   age
+------------------
+ 42 years 18 days
+(1 row)
+
+SELECT age('1990-01-01');
+--output: 32 years 1 mon 28 days.
+</code></pre>  
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+<p align ="justify">
+INTERVAL keyword in PostgreSQL to add a certain amount of time to a date:
+</p>
+
+<pre><code>
+SELECT current_date + INTERVAL '3 months';
+-- This query would add 3 months to the current date and return the result.
+
+</code></pre>  
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+<p align ="justify">
+The CAST() function converts a value (of any type) into a specified datatype.
+</p>
+
+<pre><code>
+-- Convert a value to a varchar datatype:
+SELECT CAST(25.65 AS varchar);
+
+-- Convert a value to a datetime datatype:
+SELECT CAST('2017-08-25' AS datetime);
+</code></pre>  
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;"> 
+
+<p align ="justify">
+The CURRENT_TIMESTAMP function returns the current date and time, in a 'YYYY-MM-DD hh:mm:ss.mmm' format.
+</p>
+
+<pre><code>
+SELECT CURRENT_TIMESTAMP;
+</code></pre>  
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;"> 
+
+<p align ="justify">
+The extract() function can be used to extract a specific part of a date or time value. For example, to extract the year from a date, you can use the following query:</p>
+
+<pre><code>
+SELECT extract(year from '2022-03-01');
+</code></pre>  
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;"> 
+
+<p align ="justify">
+The date_part() function is similar to extract(), but it works differently in different SQL dialects. In PostgreSQL, you can use it like this:
+</p>
+
+<pre><code>
+SELECT date_part('year', '2022-03-01');
+</code></pre>  
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;"> 
+
+<p align ="justify">
+Finally, the date_trunc() function can be used to truncate a date or time value to a specific unit. For example, to truncate a date to the beginning of the month, you can use the following query:
+</p>
+
+<pre><code>
+SELECT date_trunc('month', '2022-03-15');
+</code></pre>  
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;"> 
 
 </details>
 
@@ -1784,8 +1865,67 @@ Today, [Need to write]
 
 >  🗓️ &nbsp; Date: 2023-04-06 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
 
-<p align="justify">
-Today, [Need to write] 
+<p align ="justify">
+</p>
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 31 - (Continued) Functions for Manipulating Data in PostgreSQL </summary>
+
+>  🗓️ &nbsp; Date: 2023-04-07 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
+
+<p align ="justify">
+</p>
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>
+
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 32 - Something else </summary>
+
+>  🗓️ &nbsp; Date: 2023-04-08 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
+
+<p align ="justify">
+</p>
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>
+
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 33 - (Continued) Functions for Manipulating Data in PostgreSQL </summary>
+
+>  🗓️ &nbsp; Date: 2023-04-10 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
+
+<p align ="justify">
+</p>
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>
+
+
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 34 - (Continued) Functions for Manipulating Data in PostgreSQL </summary>
+
+>  🗓️ &nbsp; Date: 2023-04-11 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp; Resource: <a href="https://app.datacamp.com/learn/courses/functions-for-manipulating-data-in-postgresql" target="_blank"> Datacamp: Functions for Manipulating Data in PostgreSQL
+
+<p align ="justify">
+</p>
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
 
