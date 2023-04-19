@@ -2103,6 +2103,8 @@ I also reviewed creating functions to perform specific tasks and how exception h
 >  🗓️ &nbsp; Date: 2023-04-11 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: Exploratory Data Analysis in SQL
 
 <p align ="justify">
+On day 34, I delved deeper into analyzing numeric data in PostgreSQL by adding new functions to my toolkit such as average, variance, correlation, and percentile functions. I also learned how to truncate and round numeric values to suit my analysis needs. Additionally, I learned how to create complex queries and save my results by creating temporary tables.
+
 </p>
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
