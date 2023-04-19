@@ -2130,10 +2130,12 @@ On day 35, I learned about working with character data and dealing with inconsis
   
 <details> 
 <br/>
-<summary> &nbsp; 📖 &nbsp; Day 36 - </summary>
+<summary> &nbsp; 📖 &nbsp; Day 36 -  Exploring the Basics of Python Data Manipulation and Libraries: A Break from SQL Learning Journey
+</summary>
 
->  🗓️ &nbsp; Date: 2023-04-16 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: 
+>  🗓️ &nbsp; Date: 2023-04-16 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://www.coursera.org/learn/python-for-applied-data-science-ai/home/week/4" target="_blank"> Coursera: Working with Data in Python
 <p align ="justify">
+ On day 36, I decided to take a break from learning SQL and revisited Coursera to brush up on my Python skills. The module I studied covered the fundamentals of working with data in Python and started with the basics of reading and writing files. As I progressed through the module, I learned about various Python libraries that can assist in data manipulation and mathematical operations. Overall, it was a great way to reinforce my understanding of Python and its applications in data analysis.
 </p>
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
