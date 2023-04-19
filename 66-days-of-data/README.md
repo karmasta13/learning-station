@@ -2117,12 +2117,51 @@ On day 34, I delved deeper into analyzing numeric data in PostgreSQL by adding n
 <br/>
 <summary> &nbsp; 📖 &nbsp; Day 35 - (Continued) Exploratory Data Analysis in SQL</summary>
 
->  🗓️ &nbsp; Date: 2023-04-11 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: Exploratory Data Analysis in SQL
+>  🗓️ &nbsp; Date: 2023-04-12 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: Exploratory Data Analysis in SQL
 
+<p align ="justify">
+On day 35, I learned about working with character data and dealing with inconsistencies in case, spacing, and delimiters. I also learned how to recode messy categorical data using a temporary table and extract new variables from unstructured text data. Additionally, I learned how to aggregate date/time data by hour, day, month, or year and construct time series. I found it useful to learn about functions like min, max, average, variance, correlation, and percentile for summarizing numeric data. Finally, I practiced joining tables and creating temporary tables to save my results. Overall, it was a productive day learning how to manipulate and summarize data in PostgreSQL.
+</p>
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>  
+  
+  
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 36 - </summary>
+
+>  🗓️ &nbsp; Date: 2023-04-16 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: 
 <p align ="justify">
 </p>
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
 
 </details>  
+  
+  
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 37 - </summary>
 
+>  🗓️ &nbsp; Date: 2023-04-17 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: 
+<p align ="justify">
+</p>
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>  
+  
+
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 38 - </summary>
+
+>  🗓️ &nbsp; Date: 2023-04-19 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: 
+<p align ="justify">
+</p>
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>    
