@@ -2145,10 +2145,14 @@ On day 35, I learned about working with character data and dealing with inconsis
   
 <details> 
 <br/>
-<summary> &nbsp; 📖 &nbsp; Day 37 - </summary>
+<summary> &nbsp; 📖 &nbsp; Day 37 -  Exploring Customer Preferences and Sales Development with SQL
+</summary>
 
->  🗓️ &nbsp; Date: 2023-04-17 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: 
+>  🗓️ &nbsp; Date: 2023-04-17 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/data-driven-decision-making-in-sql" target="_blank"> Datacamp: Data-Driven Descision Making in SQL
 <p align ="justify">
+On day 37, I started a new course on using SQL for decision making. The course is based on a case study of an online movie rental company with a comprehensive database containing information about customers, movie ratings, actor backgrounds, and more. The course provides a valuable introduction to SQL queries and how they can be applied to study customer preferences, engagement, and sales development. I also learned about SQL extensions for online analytical processing (OLAP), which helps to extract key insights from multidimensional aggregated data.
+
+This course is very relevant to my work in data analysis as it teaches me new skills and techniques that can be applied to real-world scenarios. I am excited to continue with this course and develop my SQL skills further to support decision making. I look forward to applying the knowledge gained in this course to improve the effectiveness of my work in data analysis.
 </p>
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
