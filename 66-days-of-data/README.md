@@ -2162,13 +2162,30 @@ This course is very relevant to my work in data analysis as it teaches me new sk
 
 <details> 
 <br/>
-<summary> &nbsp; 📖 &nbsp; Day 38 - </summary>
+<summary> &nbsp; 📖 &nbsp; Day 38 - The Power of Data Storytelling: Connecting with Your Audience </summary>
 
->  🗓️ &nbsp; Date: 2023-04-19 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: 
+>  🗓️ &nbsp; Date: 2023-04-19 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/data-communication-concepts" target="_blank"> Datacamp: Data Communication Concepts
 <p align ="justify">
 On day 38, I took a course that helped me develop my data storytelling skills. The course focused on using storytelling techniques to engage with my audience and convey my message effectively. I learned about the advantages and disadvantages of oral and written formats and how to translate technical results into compelling stories using data, visualizations, and in-person presentation techniques.
 
 The hands-on exercises in the course were particularly helpful in sharpening my skills. By the end of the course, I felt more confident in my ability to present my findings to stakeholders and help them make data-driven decisions. I now understand that data storytelling is not just about presenting numbers and facts but also about telling a story that resonates with the audience. Overall, the course was a valuable learning experience, and I recommend it to all data scientists looking to improve their presentation skills.
+</p>
+
+<hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
+
+</details>   
+  
+<details> 
+<br/>
+<summary> &nbsp; 📖 &nbsp; Day 40 - Analyzing Video Game Scores and Sales Data using SQL</summary>
+
+>  🗓️ &nbsp; Date: 2023-04-21 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/projects/1413" target="_blank"> Datacamp: When was the golden age of video game? project
+<p align ="justify">
+On day 39, I worked on a project that involved analyzing video game data to find the golden age of video games. It was a challenging but rewarding experience as I applied my SQL skills to join datasets, compare results, and filter data. Through this project, I learned how to use SQL to explore different aspects of a dataset and draw insights that can inform business decisions.
+  </p>  
+
+<p align ="justify">
+This marks the end of my SQL learning journey, and I am excited to move on to the next topic. While I will miss working with SQL, I am looking forward to expanding my skillset and exploring new areas of data science.
 </p>
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
