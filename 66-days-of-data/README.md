@@ -2177,7 +2177,7 @@ The hands-on exercises in the course were particularly helpful in sharpening my 
   
 <details> 
 <br/>
-<summary> &nbsp; 📖 &nbsp; Day 40 - Analyzing Video Game Scores and Sales Data using SQL</summary>
+<summary> &nbsp; 📖 &nbsp; Day 39 - Analyzing Video Game Scores and Sales Data using SQL</summary>
 
 >  🗓️ &nbsp; Date: 2023-04-21 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/projects/1413" target="_blank"> Datacamp: When was the golden age of video game? project
 <p align ="justify">
