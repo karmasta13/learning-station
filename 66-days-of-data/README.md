@@ -2166,6 +2166,9 @@ This course is very relevant to my work in data analysis as it teaches me new sk
 
 >  🗓️ &nbsp; Date: 2023-04-19 &nbsp; &nbsp;| &nbsp; &nbsp; 🔖 &nbsp;  Resource: <a href="https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql" target="_blank"> Datacamp: 
 <p align ="justify">
+On day 38, I took a course that helped me develop my data storytelling skills. The course focused on using storytelling techniques to engage with my audience and convey my message effectively. I learned about the advantages and disadvantages of oral and written formats and how to translate technical results into compelling stories using data, visualizations, and in-person presentation techniques.
+
+The hands-on exercises in the course were particularly helpful in sharpening my skills. By the end of the course, I felt more confident in my ability to present my findings to stakeholders and help them make data-driven decisions. I now understand that data storytelling is not just about presenting numbers and facts but also about telling a story that resonates with the audience. Overall, the course was a valuable learning experience, and I recommend it to all data scientists looking to improve their presentation skills.
 </p>
 
 <hr style="border: 0; height: 0.5px; width: 80%; text-align: center;">  
