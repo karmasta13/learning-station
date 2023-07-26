@@ -55,4 +55,41 @@ Examples include email services, streaming platforms, outlook.com, and cloud.
 5. Operational Excellence: Document, refine procedures, anticipate failure, learn from failure.
 6. Sustainability: Focus on achieving maximum benefit from provisioned resources to minimize environmental impact.
 
+## History of AWS
+
+- **1994**: Founded by Jeff Bezos as an online bookstore, Amazon.com.
+
+- **2002**: Amazon Web Services (AWS) was launched as a subsidiary of Amazon.com, offering web services to provide online access to various functionalities.
+
+- **2004**: SQS (Simple Queue Service) was officially launched, allowing developers to decouple and scale microservices.
+
+- **2006**: AWS was officially launched as a comprehensive cloud computing platform, enabling businesses to access scalable and flexible IT infrastructure services.
+
+- **2006**: The first product of AWS, Amazon S3 (Simple Storage Service), was launched. It offered scalable storage solutions for customers to store and retrieve any amount of data from anywhere on the web.
+
+- **2007**: Over 180,000 developers had signed up for AWS, highlighting the growing popularity and adoption of the platform.
+
+- **2010**: Amazon.com retail web services were migrated to AWS, making it a significant milestone as one of the largest and most popular online retailers was now running on AWS infrastructure.
+
+- **2011**: AWS faced some major problems, with parts of the Elastic Block Store (EBS) experiencing issues, impacting the ability to read and write data. The problem took two days to resolve.
+
+- **2012**: AWS hosted its first customer event known as re:Invent conference, where new products and features were launched. During the same year, another major problem occurred, affecting popular sites like Pinterest, Reddit, and Foursquare.
+
+- **2013**: AWS introduced certifications to validate the expertise of software engineers in cloud computing, boosting its reputation as a reliable cloud service provider.
+
+- **2014**: AWS committed to achieving 100% renewable energy usage for its global infrastructure, emphasizing environmental sustainability.
+
+- **2015**: AWS's revenue surpassed $6 billion USD per annum, and its growth rate was an impressive 90% annually.
+
+- **2016**: Revenue doubled and reached $13 billion USD per annum, showcasing AWS's rapid expansion and increasing adoption by businesses worldwide.
+
+- **2017**: AWS re:Invent introduced a host of Artificial Intelligence (AI) services, contributing to a doubled revenue of $27 billion USD per annum. The focus on automating AI and machine learning further strengthened AWS's position in the market.
+
+- **2018**: AWS launched Machine Learning Specialty Certifications, emphasizing the importance of AI and machine learning technologies in its offerings.
+
+Today, AWS is one of the leading cloud service providers globally, serving over 1 million active customers with a vast array of services, including computing power, storage options, machine learning, and more.
+
+The history of AWS highlights its continuous growth, innovation, and commitment to providing scalable, reliable, and cost-effective cloud solutions for businesses of all sizes.
+
+
 
