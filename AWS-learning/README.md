@@ -18,8 +18,7 @@ Cloud computing is the on-demand delivery of computing, database storage, applic
 
 ### History of Cloud Computing:
 1. Mainframe Computing (1950s): Central computer accessed by numerous user devices (dumb terminals).
-2. Virtual Machines (1970s): Multiple complete operating systems on a single piece of hardware.
-3. Hypervisor (Not elaborated in the notes).
+2. Virtual Machines (1970s): Multiple complete operating systems on a single piece of hardware. Hypervisor is a software layer that lets you run the VMS
 
 ### Cloud Computing in Daily Life:
 Examples include email services, streaming platforms, outlook.com, and cloud.
@@ -33,14 +32,15 @@ Examples include email services, streaming platforms, outlook.com, and cloud.
 6. Go global in minutes.
 
 ### Three Main Cloud Computing Models:
-1. SaaS (Software as a Service): Managed by the service provider, easy to use, least flexibility (e.g., Gmail).
-2. PaaS (Platform as a Service): Deploy and manage applications without worrying about underlying hardware infrastructure. Less flexible than IaaS (e.g., Microsoft Azure Web Hosting, Heroku, Google App Engine).
-3. IaaS (Infrastructure as a Service): Basic building blocks, most flexibility and management control, closest to traditional on-premises data centers (e.g., Google Cloud, Amazon Web Services).
+1. SaaS (Software as a Service): Managed by the service provider, easy to use, least flexibility (e.g., Gmail, SalesForce). This is for customers.
+2. PaaS (Platform as a Service): Deploy and manage applications without worrying about underlying hardware infrastructure. Less flexible than IaaS (e.g., Microsoft Azure Web Hosting, Heroku, Google App Engine). This is for developers. 
+3. IaaS (Infrastructure as a Service): Basic building blocks, most flexibility and management control, closest to traditional on-premises data centers (e.g., Google Cloud, Amazon Web Services). This is for Admins. 
 
 ### Cloud Deployment Models:
-1. Cloud Deployment: 100% of IT infrastructure on the cloud, removes roadblocks of costly procurement process.
-2. On-Premises Deployment: Uses virtualization in on-premises data centers, security-focused, not much benefit to cloud computing.
+1. Cloud Deployment/ Public Cloud / Cloud First: 100% of IT infrastructure on the cloud, removes roadblocks of costly procurement process.
+2. On-Premises Deployment/ Private Cloud: Uses virtualization in on-premises data centers, security-focused, not much benefit to cloud computing.
 3. Hybrid Deployment: Connects on-premises technology with cloud-based resources, suitable for companies in the process of migrating to the cloud.
+4. Cross-Cloud: Using Multiple Cloud Providers at the same time. 
 
 ### Choosing the Deployment Model:
 1. Cloud Deployment: For organizations with few deployed IT resources, seeking flexibility and affordability.
@@ -54,6 +54,26 @@ Examples include email services, streaming platforms, outlook.com, and cloud.
 4. Security: Protect information, system, and assets, enable traceability, manage access.
 5. Operational Excellence: Document, refine procedures, anticipate failure, learn from failure.
 6. Sustainability: Focus on achieving maximum benefit from provisioned resources to minimize environmental impact.
+
+### What is Cloud Service Provider (CSP)?
+
+A CSP is a company which
+
+- provides multiple Cloud Services e.g tens to hundreds of services
+- those Cloud Services can be chained together to create cloud architectures
+- those Cloud Services are accessible via Single Unified API eg. AWS API
+- those Cloud Services utilized metered billing based on usage e.g. per second, per hour
+- those Cloud Services have rich monitoring built in eg. AWS CloudTrail
+- those Cloud Services have an Infrastructure as a Service (IaaS) offering
+- those Cloud Services offer automation via Infrastructure as Code (IaC)
+
+* If a company offers multiple cloud services under a single UI do not meet most of all these requirements, it would be referred to as a Cloud Platform e.g. Twilio, Databricks *
+
+#### The landscape of CSP consists of three:
+
+1. Tier-1 (Top Tier) - Early to market, wide offering, strong synergies between services, well recognized in the industry. Eg. AWS, Microsoft Azure, Google Cloud Platform (GCP), Alibaba Cloud 
+2. Tier-2 (Mid Tier) - Backed by well-known tech companies, slow to innovate and turned to specialization. Eg. IBM cloud, Oracle Cloud, Rackspace(OpenStack)
+3. Tier-3 (Light Tier) - Virtual Private Servers (VPS) turned to offer core LaaS offerings. Simple, Cost Effective. Eg. Vultr, DigitalOcean, Linode
 
 <hr>
 
@@ -83,7 +103,7 @@ Whether it's startups, enterprises, or government agencies, AWS has become a tru
 
 - **2006**: AWS was officially launched as a comprehensive cloud computing platform, enabling businesses to access scalable and flexible IT infrastructure services.
 
-- **2006**: The first product of AWS, Amazon S3 (Simple Storage Service), was launched. It offered scalable storage solutions for customers to store and retrieve any amount of data from anywhere on the web.
+- **2006**: The first product of AWS, Amazon S3 (Simple Storage Service), was launched in March. It offered scalable storage solutions for customers to store and retrieve any amount of data from anywhere on the web. Then EC2 (Elastic Compute Cloud) was launched in August
 
 - **2007**: Over 180,000 developers had signed up for AWS, highlighting the growing popularity and adoption of the platform.
 
@@ -108,6 +128,13 @@ Whether it's startups, enterprises, or government agencies, AWS has become a tru
 Today, AWS is one of the leading cloud service providers globally, serving over 1 million active customers with a vast array of services, including computing power, storage options, machine learning, and more.
 
 The history of AWS highlights its continuous growth, innovation, and commitment to providing scalable, reliable, and cost-effective cloud solutions for businesses of all sizes.
+
+
+
+
+
+
+
 
 
 
